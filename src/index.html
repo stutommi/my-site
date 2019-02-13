@@ -13,41 +13,96 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Scrollreveal.js -->
     <script src="https://unpkg.com/scrollreveal"></script>
-
 </head>
 
 <body>
+    <div class="h-100">
+        <!-- Home -->
+        <section class="h-100">
+            <div class='container-fluid p-0 h-100' id='container'>
+                <canvas></canvas>
 
-    <!-- Home -->
-    <section class="h-100">
-        <div class='container-fluid p-0 h-100' id='home-container'>
-            <canvas></canvas>
+                <div class='row justify-content-center align-items-center m-0 w-100 h-100 align-content-sm-center'>
+                    <div class="col-sm-12 m-0 justify-content-center text-center home-wrapper mb-4 h-70">
+                        <h1 id='hs1' class='mb-4 slide-up delay-1'>Hi, I'm <span class="text-info">Tommi Tampio</span>.</h1>
+                        <p id='hs2' class='lead slide-up delay-3'>I work as a musician and a guitar teacher...</p>
+                        <p id='hs3' class="lead slide-up delay-5">...I've also started to develop my skills as an
+                            aspiring<br> </p>
+                        <p class='lead delay-7'><kbd id="code-text">frontend developer</kbd><kbd id="cursor">_</kbd></p>
 
-            <div class='row justify-content-center align-items-center m-0 w-100 h-100 align-content-sm-center'>
-                <div class="col-sm-12 m-0 justify-content-center text-center home-wrapper mb-4 h-70">
-                    <h1 id='hs1' class='mb-4 '>Hio, I'm <span class="text-info">Tommi Tampio</span>.</h1>
-                    <p id='hs2' class='lead '>I work as a musician and a guitar teacher...</p>
-                    <p id='hs3' class="lead ">...I've also started to develop my skills as an aspiring<br> </p>
-                    <div id="hs4" class="">
-                        <p class='mb- lead'><kbd id="code-text">frontend developer</kbd><kbd id="cursor">_</kbd></p>
+                    </div>
+                    <div class="delay-9 col-sm-12 align-items-start justify-content-center text-center h-30">
+                        <div id="hs5" class=""><a class="btn btn-primary pr-1" href="#nav" role="button" id='home-button'>Read
+                                more<i class="align-middle material-icons" id='home-arrow'>chevron_right</i></a></div>
                     </div>
                 </div>
-                <div class="col-sm-12 align-items-start justify-content-center text-center h-30 align-self-end">
-                    <div id="hs5" class=""><a class="btn btn-primary pr-1" href="#" role="button" id='home-button'>Read
-                            more<i class="align-middle material-icons" id='home-arrow'>chevron_right</i></a></div>
+
+            </div>
+        </section>
+        <!-- Nav -->
+        <nav class="navbar navbar-light bg-light fixed-top" id="nav">
+            <a class="navbar-brand" href="#">Nav</a>
+        </nav>
+
+
+        <!-- About -->
+        <div class='container-fluid h-100' id="container">
+
+            <div class="row">
+                <div class="col-sm-auto">
+                    <h1>About</h1>
                 </div>
             </div>
-
+            <div class="row">
+                <div class="col-sm-3">
+                    <h1>1</h1>
+                </div>
+                <div class="col-sm-3">
+                    <h1>2</h1>
+                </div>
+                <div class="col-sm-3">
+                    <h1>3</h1>
+                </div>
+                <div class="col-sm-3">
+                    <h1>4</h1>
+                </div>
+            </div>
         </div>
 
-        <script src="/js/jquery.min.js"></script>
-        <script src="/js/popper.min.js"></script>
-        <script src="/js/bootstrap.min.js"></script>
-        <script src='./js/canvas.js'></script>
-        <script src='./js/home.js'></script>
-        <script src='./js/scrollreveal.js'></script>
+        <!-- Something else -->
 
-    </section>
+        <div class='container-fluid h-100' id="">
+            <div class="row">
+                <div class="col-sm-12">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit itaque ex, totam officiis
+                        nihil accusantium officia obcaecati dolorum natus maxime vitae facere sed. Repellendus ex harum
+                        facilis. Error est enim modi eius ipsum asperiores aspernatur deleniti dolorum, iste in. Cum
+                        neque officia reprehenderit vitae unde, tempore, eveniet doloremque, magnam consequatur quis
+                        eum et deserunt ipsam voluptatum? Tempora eveniet quae laboriosam quibusdam deleniti autem
+                        quasi totam iusto aliquid? Illum recusandae laudantium dolorum magnam provident fuga
+                        repellendus consequatur obcaecati? Nihil pariatur, voluptatum aut sapiente deserunt at
+                        corporis, nisi maxime blanditiis distinctio dolorum eaque delectus illum in magnam, voluptate
+                        sint ea earum quia perspiciatis officiis dicta? In, quos! Amet iusto perspiciatis quo magnam,
+                        veniam repellat perferendis ea quaerat illo quas ratione soluta esse sequi temporibus
+                        inventore. Excepturi, odio, pariatur minima ea, dolorem consequatur obcaecati cumque ut
+                        nesciunt aperiam dolores omnis! Inventore in, laudantium molestias vel, fugiat impedit itaque
+                        necessitatibus temporibus voluptate libero tempore aliquam aliquid eveniet? Quis, qui? Laborum
+                        explicabo, tempore sapiente fugit hic quaerat quasi voluptatem veritatis exercitationem esse
+                        ratione placeat alias assumenda. Cumque eligendi provident iure, expedita vel fuga deserunt.
+                        Esse, reprehenderit quibusdam dignissimos corrupti cumque voluptatum, recusandae inventore
+                        eaque dolores soluta modi tempora rem, voluptatibus pariatur numquam officiis error voluptates.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Scripts -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src='./js/canvas.js'></script>
+    <script src='./js/home.js'></script>
+    <script src='./js/scrollreveal.js'></script>
+
 </body>
 
 </html>
