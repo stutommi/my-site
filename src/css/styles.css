@@ -1,0 +1,82 @@
+html, body {
+  margin: 0;
+  height: 100%; }
+
+canvas {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  animation: canvas 2s linear 9s 1;
+  animation-fill-mode: forwards; }
+
+#home-container {
+  width: 100%;
+  height: 100%; }
+
+#home-info {
+  width: 100%;
+  height: 100%; }
+
+#home-button {
+  border: 1px solid transparent; }
+
+.home-arrow-right {
+  transform: rotate(0deg);
+  transition: transform 0.2s linear; }
+
+.home-arrow-down {
+  transform: rotate(90deg);
+  transition: transform 0.2s linear; }
+
+#code-text {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  padding-right: 0; }
+
+#cursor {
+  color: white;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  padding-left: 0;
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite; }
+
+@keyframes canvas {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes blink {
+  from, to {
+    color: transparent; }
+  50% {
+    color: white; } }
+
+@-moz-keyframes blink {
+  from, to {
+    color: transparent; }
+  50% {
+    color: white; } }
+
+@-webkit-keyframes blink {
+  from, to {
+    color: transparent; }
+  50% {
+    color: white; } }
+
+@-ms-keyframes blink {
+  from, to {
+    color: transparent; }
+  50% {
+    color: white; } }
+
+@-o-keyframes blink {
+  from, to {
+    color: transparent; }
+  50% {
+    color: white; } }
