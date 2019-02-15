@@ -1,5 +1,15 @@
 $('body').scrollspy({ target: '#navbar-example' })
 
+$(document).ready(function() {
+  var bgMusic = $("#bgMusic")[0];
+  var btn = $(".playbutton");
+  btn.click(function() {
+    bgMusic.play();
+    btn.toggleClass("paused");
+    return false;
+  });
+});
+
 
 // Hide collapse on click
 $('.navbar-nav>a, .nav>a').on('click', function () {
@@ -11,11 +21,9 @@ $('.navbar-nav>a, .nav>a').on('click', function () {
   var arrow = document.getElementById('home-arrow');
 
   button.addEventListener('mouseover', function () {
-    console.log('hi');
     arrow.className = 'home-arrow-down align-middle material-icons';
   });
   button.addEventListener('mouseout', function () {
-    console.log('hei');
 
     arrow.className = 'home-arrow-right align-middle material-icons';
   })
