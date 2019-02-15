@@ -3,8 +3,10 @@ $('body').scrollspy({ target: '#navbar-example' })
 $(document).ready(function() {
   var bgMusic = $("#bgMusic")[0];
   var btn = $(".playbutton");
+  var isPaused = true;
   btn.click(function() {
-    bgMusic.play();
+    isPaused ? bgMusic.play() : bgMusic.pause();
+    isPaused = !isPaused;
     btn.toggleClass("paused");
     return false;
   });
