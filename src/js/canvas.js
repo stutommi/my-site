@@ -64,13 +64,14 @@ var helper = function() {
 
 
 var colorArray = [
-    `${`rgba(${Math.random() * 255},${Math.random() * 255},${Math.random() * 255}, ${Math.random()})`}`,
-    `${`rgba(${Math.random() * 255},${Math.random() * 255},${Math.random() * 255}, ${Math.random()})`}`,
-    `${`rgba(${Math.random() * 255},${Math.random() * 255},${Math.random() * 255}, ${Math.random()})`}`,
-    `${`rgba(${Math.random() * 255},${Math.random() * 255},${Math.random() * 255}, ${Math.random()})`}`,
-    `${`rgba(${Math.random() * 255},${Math.random() * 255},${Math.random() * 255}, ${Math.random()})`}`
-];
+    `rgba(${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 10) / 10}`,
+    `rgba(${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 10) / 10}`,
+    `rgba(${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 10) / 10}`,
+    `rgba(${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 10) / 10}`,
+    `rgba(${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 10) / 10}`
 
+];
+console.log(colorArray);
 window.addEventListener('mousemove', function (event) {
     mouse.x = event.x;
     mouse.y = event.y;

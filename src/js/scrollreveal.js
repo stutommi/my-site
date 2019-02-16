@@ -10,14 +10,22 @@ var slideLeft = {
     distance: '100%',
     origin: 'left',
     opacity: 0,
+    // delay: 500,
+    mobile: false
+};
+
+var slideRight = {
+    distance: '100%',
+    origin: 'right',
+    opacity: 0,
     delay: 500,
     mobile: false
 };
 
 // Delays
-
 ScrollReveal().reveal('.slide-up', slideUp);
 ScrollReveal().reveal('.slide-left', slideLeft);
+ScrollReveal().reveal('.slide-right', slideRight);
 ScrollReveal().reveal('.delay-1', {delay: 1000});
 ScrollReveal().reveal('.delay-2', {delay: 2000});
 ScrollReveal().reveal('.delay-3', {delay: 3000});
