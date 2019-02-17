@@ -31,20 +31,22 @@
 
         <div id="play-button" class="slide-right delay-3 d-inline-flex align-items-center">
             <div class="playbutton"></div>
-            <p class="mb-0 ml-4 slide-right delay-4">
-                <- My music</p> </div> <div class='row justify-content-center align-items-center m-0 w-100 h-100 align-content-center'>
-                    <div class="col-sm-12 m-0 justify-content-center text-center home-wrapper mb-4 h-70">
-                        <h1 id='hs1' class='mb-4 slide-up delay-1'>Hi, I'm <span class="text-info">Tommi Tampio</span>.</h1>
-                        <p id='hs2' class='lead slide-up delay-3'>I work as a musician and a guitar teacher...</p>
-                        <p id='hs3' class="lead slide-up delay-5">...I've also started to develop my skills as an
-                            aspiring<br> </p>
-                        <p class='lead delay-7'><kbd id="code-text">frontend developer</kbd><kbd id="cursor">_</kbd></p>
+            <p class="mb-0 ml-2 slide-right delay-4">
+                <span class="material-icons align-middle">chevron_left </span>My music</p>
+        </div>
+        <div class='row justify-content-center align-items-center m-0 w-100 h-100 align-content-center'>
+            <div class="col-sm-12 m-0 justify-content-center text-center home-wrapper mb-4 h-70">
+                <h1 id='hs1' class='mb-4 slide-up delay-1'>Hi, I'm <span class="text-info">Tommi Tampio</span>.</h1>
+                <p id='hs2' class='lead slide-up delay-3'>I work as a musician and a guitar teacher...</p>
+                <p id='hs3' class="lead slide-up delay-5">...I've also started to develop my skills as an
+                    aspiring<br> </p>
+                <p class='lead delay-7'><kbd id="code-text">frontend developer</kbd><kbd id="cursor">_</kbd></p>
 
-                    </div>
-                    <div class="delay-9 col-sm-12 align-items-start justify-content-center text-center h-30">
-                        <div id="hs5" class=""><a class="btn btn-primary pr-1" href="#home" role="button" id='home-button'>Read
-                                more<i class="align-middle material-icons" id='home-arrow'>chevron_right</i></a></div>
-                    </div>
+            </div>
+            <div class="delay-9 col-sm-12 align-items-start justify-content-center text-center h-30">
+                <div id="hs5" class=""><a class="btn btn-primary pr-1" href="#home" role="button" id='home-button'>Read
+                        more<i class="align-middle material-icons" id='home-arrow'>chevron_right</i></a></div>
+            </div>
         </div>
 
     </div>
@@ -102,7 +104,7 @@
                     <div class="header-bar text-center bg-dark slide-left delay-m-05"></div>
                 </div>
             </div>
-            <div class="row justify-content-center">
+            <div class="row justify-content-center mb-lg-4">
                 <div class="col-auto">
                     <p class="lead text-center text-dark">This site is a presentation of my two sides:<br> <span class=" text-success">Music</span>
                         and <span class="text-info">Web development</span>.</p>
@@ -112,58 +114,127 @@
             </div>
             <div class="row justify-content-center d-lg-none">
                 <div class="col-sm-6 justify-content-around d-flex">
-                    <button class="btn btn-success">Music</button>
-                    <button class="btn btn-info">WebDev</button>
+                    <button class="btn btn-success" type="button" data-toggle="collapse" data-target="#music-facts" aria-expanded="false" aria-controls="music-facts">Music</button>
+                    <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#web-facts" aria-expanded="false" aria-controls="web-facts">WebDev</button>
                 </div>
             </div>
-
+            <!-- Facts section -->
             <div class="row">
-                <div class="col-6">
-                    <div class="card bg-light text-white text-center align-items-center border-0 justify-content-center"
-                        >
-                        <div>
-                            <div id="hexagon-green">1</div>
+                <!-- Music facts -->
+                <div class="col div-collapse collapse" id="music-facts">
+                    <div class="row">
+                        <div class="col-6 sequenced-1">
+                            <div class="card bg-light text-white text-center align-items-center border-0 justify-content-center">
+                                <div class="rotate sequenced-1">
+                                    <div id="hexagon-green">1</div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-muted font-weight-bold">Teaching</h5>
+                                    <p class="card-text text-muted text-small">Lorem ipsum dolor sit amet. Lorem,
+                                        ipsum.</p>
+                                    <!-- <a href="#guitar-lessons" class="btn btn-primary">Lessons?</a> -->
+                                </div>
+                            </div>
                         </div>
+                        <div class="col-6 sequenced-1">
+                            <div class="card bg-light text-white text-center align-items-center border-0 justify-content-center">
+                                <div class="rotate sequenced-1">
+                                    <div id="hexagon-green">2</div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-muted font-weight-bold">Performing</h5>
+                                    <p class="card-text text-muted text-small">Lorem ipsum dolor sit amet. Lorem,
+                                        ipsum.</p>
 
-                        <div class="card-body">
-                            <h5 class="card-title text-muted font-weight-bold">Teaching</h5>
-                            <p class="card-text text-muted text-small">Lorem ipsum dolor sit amet. Lorem, ipsum.</p>
-                            <!-- <a href="#guitar-lessons" class="btn btn-primary">Lessons?</a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 sequenced-2">
+                            <div class="card bg-light text-white text-center align-items-center border-0 justify-content-center">
+                                <div class="rotate sequenced-2">
+                                    <div id="hexagon-green">3</div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-muted font-weight-bold">Composing</h5>
+                                    <p class="card-text text-muted text-small">Lorem ipsum dolor sit amet. Lorem,
+                                        ipsum.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 sequenced-2">
+                            <div class="card bg-light text-white text-center align-items-center border-0 justify-content-center">
+                                <div class="rotate sequenced-2">
+                                    <div id="hexagon-green">4</div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title text-muted font-weight-bold">Improvising</h5>
+                                    <p class="card-text text-muted text-small">Lorem ipsum dolor sit amet. Lorem,
+                                        ipsum.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-6">
-                        <div class="card bg-light text-white text-center align-items-center border-0 justify-content-center"
-                            >
-                            <div>
-                                <div id="hexagon-green">2</div>
+                <!-- Web facts -->
+                <div class="col div-collapse collapse" id="web-facts">
+                        <div class="row">
+                            <div class="col-6 sequenced-1">
+                                <div class="card bg-light text-white text-center align-items-center border-0 justify-content-center">
+                                    <div class="sequenced-1 rotate">
+                                        <div id="hexagon-teal">1</div>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title text-muted font-weight-bold">Websites</h5>
+                                        <p class="card-text text-muted text-small">Lorem ipsum dolor sit amet. Lorem,
+                                            ipsum.</p>
+                                        <!-- <a href="#guitar-lessons" class="btn btn-primary">Lessons?</a> -->
+                                    </div>
+                                </div>
                             </div>
+                            <div class="col-6 sequenced-1">
+                                <div class="card bg-light text-white text-center align-items-center border-0 justify-content-center">
+                                    <div class="sequenced-1 rotate">
+                                        <div id="hexagon-teal">2</div>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title text-muted font-weight-bold">Looking for</h5>
+                                        <p class="card-text text-muted text-small">Lorem ipsum dolor sit amet. Lorem,
+                                            ipsum.</p>
     
-                            <div class="card-body">
-                                <h5 class="card-title text-muted font-weight-bold">Performing</h5>
-                                <p class="card-text text-muted text-small">Lorem ipsum dolor sit amet. Lorem, ipsum.</p>
-                                <!-- <a href="#guitar-lessons" class="btn btn-primary">Lessons?</a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 sequenced-2">
+                                <div class="card bg-light text-white text-center align-items-center border-0 justify-content-center">
+                                    <div class="sequenced-2 rotate">
+                                        <div id="hexagon-teal">3</div>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title text-muted font-weight-bold">Frontend</h5>
+                                        <p class="card-text text-muted text-small">Lorem ipsum dolor sit amet. Lorem,
+                                            ipsum.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 sequenced-2">
+                                <div class="card bg-light text-white text-center align-items-center border-0 justify-content-center">
+                                    <div class="sequenced-2 rotate">
+                                        <div id="hexagon-teal">4</div>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title text-muted font-weight-bold">Backend</h5>
+                                        <p class="card-text text-muted text-small">Lorem ipsum dolor sit amet. Lorem,
+                                            ipsum.</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
             </div>
-
-
-
-            <div class="card bg-light text-white text-center align-items-center border-0 justify-content-center" style="width: 18rem;">
-                <div>
-                    <div id="hexagon-green">1</div>
-                </div>
-
-                <div class="card-body">
-                    <h5 class="card-title text-muted font-weight-bold">Teaching</h5>
-                    <p class="card-text text-muted text-small">Some quick example text to build on the card title and
-                        make up the bulk of the card's content.</p>
-                    <!-- <a href="#guitar-lessons" class="btn btn-primary">Lessons?</a> -->
-                </div>
-            </div>
-
-
 
         </section>
         <div class='container-fluid h-100'>

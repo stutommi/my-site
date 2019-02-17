@@ -22,6 +22,13 @@ var slideRight = {
     mobile: false
 };
 
+var rotate = {
+    rotate: {
+        y: 90
+    },
+    mobile: false
+}
+
 // Delays
 ScrollReveal().reveal('.slide-up', slideUp);
 ScrollReveal().reveal('.slide-left', slideLeft);
@@ -39,6 +46,7 @@ ScrollReveal().reveal('.delay-8', {delay: 8000});
 ScrollReveal().reveal('.delay-9', {delay: 9000});
 ScrollReveal().reveal('.delay-10', {delay: 10000});
 
+// Non-mobiles delays
 ScrollReveal().reveal('.delay-m-025', {delay: 250, mobile: false});
 ScrollReveal().reveal('.delay-m-05', {delay: 500, mobile: false});
 ScrollReveal().reveal('.delay-m-1', {delay: 1000, mobile: false});
@@ -52,4 +60,10 @@ ScrollReveal().reveal('.delay-m-8', {delay: 8000, mobile: false});
 ScrollReveal().reveal('.delay-m-9', {delay: 9000, mobile: false});
 ScrollReveal().reveal('.delay-m-10', {delay: 10000, mobile: false});
 
+// Intervals
+ScrollReveal().reveal('.sequenced-1', { interval: 100, mobile: false});
+ScrollReveal().reveal('.sequenced-2', { interval: 100, mobile: false});
+
+// Rotattions
+ScrollReveal().reveal('.rotate', rotate);
 

@@ -43,6 +43,36 @@ html, body {
   border-top: 25px solid #28a745;
 }
 
+#hexagon-teal {
+  margin: 40px 0 20px 0;
+  width: 100px;
+  height: 55px;
+  background: #17a2b8;
+  position: relative;
+}
+#hexagon-teal:before {
+  content: "";
+  position: absolute;
+  top: -25px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 25px solid #17a2b8;
+}
+#hexagon-teal:after {
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 25px solid #17a2b8;
+}
+
 body {
     position: relative;
 }
@@ -227,3 +257,12 @@ canvas {
           }
         }
     }
+
+    /* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .div-collapse.collapse {
+    display: block !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+ }
