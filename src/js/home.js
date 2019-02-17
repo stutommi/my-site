@@ -1,3 +1,4 @@
+// Placing bootstrap scrollspy on body
 $('body').scrollspy({ target: '#nav' })
 
 $(document).ready(function() {
@@ -18,6 +19,8 @@ $('a[href*="#"]')
   .not('[href="#"]')
   .not('[href="#0"]')
   .click(function(event) {
+    // Hide collapse on click
+    $('.navbar-collapse').removeClass('show')
     // On-page links
     if (
       location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
@@ -49,10 +52,7 @@ $('a[href*="#"]')
     }
   });
 
-// Hide collapse on click
-$('.navbar-nav>a, .nav>a').on('click', function () {
-  $('.navbar-collapse').removeClass('show')
-});
+
 
 (function (document) {
   var button = document.getElementById('home-button');

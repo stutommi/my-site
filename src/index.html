@@ -29,85 +29,144 @@
             <code>audio</code> element.
         </audio>
 
-        <div id="play-button" class="slide-up delay-3 d-inline-flex align-items-center">
+        <div id="play-button" class="slide-right delay-3 d-inline-flex align-items-center">
             <div class="playbutton"></div>
-            <p class="mb-0 ml-4 slide-right delay-4"><- My music</p>
-        </div>
+            <p class="mb-0 ml-4 slide-right delay-4">
+                <- My music</p> </div> <div class='row justify-content-center align-items-center m-0 w-100 h-100 align-content-center'>
+                    <div class="col-sm-12 m-0 justify-content-center text-center home-wrapper mb-4 h-70">
+                        <h1 id='hs1' class='mb-4 slide-up delay-1'>Hi, I'm <span class="text-info">Tommi Tampio</span>.</h1>
+                        <p id='hs2' class='lead slide-up delay-3'>I work as a musician and a guitar teacher...</p>
+                        <p id='hs3' class="lead slide-up delay-5">...I've also started to develop my skills as an
+                            aspiring<br> </p>
+                        <p class='lead delay-7'><kbd id="code-text">frontend developer</kbd><kbd id="cursor">_</kbd></p>
 
-        <div class='row justify-content-center align-items-center m-0 w-100 h-100 align-content-center'>
-            <div class="col-sm-12 m-0 justify-content-center text-center home-wrapper mb-4 h-70">
-                <h1 id='hs1' class='mb-4 slide-up delay-1'>Hi, I'm <span class="text-info">Tommi Tampio</span>.</h1>
-                <p id='hs2' class='lead slide-up delay-3'>I work as a musician and a guitar teacher...</p>
-                <p id='hs3' class="lead slide-up delay-5">...I've also started to develop my skills as an
-                    aspiring<br> </p>
-                <p class='lead delay-7'><kbd id="code-text">frontend developer</kbd><kbd id="cursor">_</kbd></p>
-
-            </div>
-            <div class="delay-9 col-sm-12 align-items-start justify-content-center text-center h-30">
-                <div id="hs5" class=""><a class="btn btn-primary pr-1" href="#home" role="button" id='home-button'>Read
-                        more<i class="align-middle material-icons" id='home-arrow'>chevron_right</i></a></div>
-            </div>
+                    </div>
+                    <div class="delay-9 col-sm-12 align-items-start justify-content-center text-center h-30">
+                        <div id="hs5" class=""><a class="btn btn-primary pr-1" href="#home" role="button" id='home-button'>Read
+                                more<i class="align-middle material-icons" id='home-arrow'>chevron_right</i></a></div>
+                    </div>
         </div>
 
     </div>
     <!-- Nav -->
 
     <nav class="sticky-top" id="nav">
-        <div class="navbar nav nav-pills navbar-expand-lg navbar-light bg-light">
+        <div class="navbar nav navbar-expand-lg navbar-dark bg-dark">
             <div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup1"
                     aria-controls="navbarNavAltMarkup1" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <i class="align-middle ml-1 fas fa-guitar h3 text-black-50 mb-0 d-lg-none"></i>
+                <a class="align-middle ml-1 fas fa-guitar h3 text-muted mb-0 d-lg-none" href="#music"></a>
             </div>
-            <div class="nav nav-pills">
+            <div class="nav navbar-nav">
                 <a class="nav-item nav-link" href="#home">Home</a>
             </div>
             <div>
-                <i class="align-middle mr-1 fas fa-laptop-code h3 text-black-50 mb-0 d-lg-none"></i>
+                <a href="#web" class="align-middle mr-1 fas fa-laptop-code h3 text-muted mb-0 d-lg-none"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup2"
                     aria-controls="navbarNavAltMarkup2" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
-            <div class="collapse nav nav-pills navbar-collapse" id="navbarNavAltMarkup1">
-                <div class="navbar-nav nav nav-pills w-100 justify-content-lg-around">
+            <div class="collapse nav navbar-collapse navbar-dark bg-dark" id="navbarNavAltMarkup1">
+                <div class="navbar-nav nav w-100 justify-content-lg-around border-bottom-0">
                     <a class="nav-item nav-link " href="#music">Music</a>
                     <a class="nav-item nav-link" href="#guitar-lessons">Guitar Lessons?</a>
                     <a class="nav-item nav-link d-lg-none" href="#contact">Contact</a>
                 </div>
             </div>
-            <div class="collapse nav nav-pills navbar-collapse" id="navbarNavAltMarkup2">
-                <div class="navbar-nav nav nav-pills w-100 justify-content-lg-around">
-                    <a class="nav-item nav-link text-right" href="#web">WebDev</a>
-                    <a class="nav-item nav-link text-right" href="#skills">Skills?</a>
-                    <a class="nav-item nav-link text-right" href="#projects">Projects</a>
-                    <a class="nav-item nav-link text-right" href="#contact">Contact</a>
+            <div class="collapse nav navbar-collapse navbar-dark bg-dark" id="navbarNavAltMarkup2">
+                <div class="navbar-nav nav w-100 justify-content-lg-around">
+                    <a class="nav-item nav-link" href="#web">WebDev</a>
+                    <a class="nav-item nav-link" href="#skills">Skills?</a>
+                    <a class="nav-item nav-link" href="#projects">Projects</a>
+                    <a class="nav-item nav-link" href="#contact">Contact</a>
                 </div>
             </div>
         </div>
     </nav>
 
 
-    <div class='container-fluid h-100 a-pad' id="home">
+    <div class='container-fluid h-100 bg-light text-center'>
 
         <!-- Home -->
         <section>
-            <div class="row justify-content-center">
+            <div class="row justify-content-center" id="home-header">
                 <div class="col-auto">
-                    <h1 class="font-weight-bold a-pad text-center text-dark slide-left" id="music">Tommi Tampio</h1>
+                    <h1 class="font-weight-bold a-pad text-center text-dark slide-left" id="home">Tommi Tampio</h1>
                 </div>
             </div>
             <div class="row justify-content-center">
                 <div class="col-auto">
-                    <div class="header-bar text-center bg-dark slide-left delay-m-1"></div>
+                    <div class="header-bar text-center bg-dark slide-left delay-m-05"></div>
                 </div>
             </div>
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <p class="lead text-center text-dark">This site is a presentation of my two sides:<br> <span class=" text-success">Music</span>
+                        and <span class="text-info">Web development</span>.</p>
+                    <p class="">You can navigate straight to either depending on your interests!</p>
+                    <p class="d-lg-none">Click the buttons for some quick facts!</p>
+                </div>
+            </div>
+            <div class="row justify-content-center d-lg-none">
+                <div class="col-sm-6 justify-content-around d-flex">
+                    <button class="btn btn-success">Music</button>
+                    <button class="btn btn-info">WebDev</button>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-6">
+                    <div class="card bg-light text-white text-center align-items-center border-0 justify-content-center"
+                        >
+                        <div>
+                            <div id="hexagon-green">1</div>
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title text-muted font-weight-bold">Teaching</h5>
+                            <p class="card-text text-muted text-small">Lorem ipsum dolor sit amet. Lorem, ipsum.</p>
+                            <!-- <a href="#guitar-lessons" class="btn btn-primary">Lessons?</a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                        <div class="card bg-light text-white text-center align-items-center border-0 justify-content-center"
+                            >
+                            <div>
+                                <div id="hexagon-green">2</div>
+                            </div>
+    
+                            <div class="card-body">
+                                <h5 class="card-title text-muted font-weight-bold">Performing</h5>
+                                <p class="card-text text-muted text-small">Lorem ipsum dolor sit amet. Lorem, ipsum.</p>
+                                <!-- <a href="#guitar-lessons" class="btn btn-primary">Lessons?</a> -->
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+
+
+            <div class="card bg-light text-white text-center align-items-center border-0 justify-content-center" style="width: 18rem;">
+                <div>
+                    <div id="hexagon-green">1</div>
+                </div>
+
+                <div class="card-body">
+                    <h5 class="card-title text-muted font-weight-bold">Teaching</h5>
+                    <p class="card-text text-muted text-small">Some quick example text to build on the card title and
+                        make up the bulk of the card's content.</p>
+                    <!-- <a href="#guitar-lessons" class="btn btn-primary">Lessons?</a> -->
+                </div>
+            </div>
+
 
 
         </section>
-        <div class='container-fluid h-100' id="">
+        <div class='container-fluid h-100'>
 
             <!-- Music -->
             <section>
@@ -119,6 +178,11 @@
                 <div class="row justify-content-center">
                     <div class="col-auto">
                         <div class="header-bar text-center bg-dark slide-left delay-m-1"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <!-- <img class="d-block vw-50 rounded-circle" src="./media/Tommi SWQ tenho 1.jpg" alt="Second slide"> -->
                     </div>
                 </div>
             </section>
@@ -137,7 +201,6 @@
                     </div>
                 </div>
             </section>
-
             <!-- Web Developing -->
             <section>
                 <div class="row justify-content-center">

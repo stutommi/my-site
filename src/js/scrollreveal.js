@@ -26,6 +26,8 @@ var slideRight = {
 ScrollReveal().reveal('.slide-up', slideUp);
 ScrollReveal().reveal('.slide-left', slideLeft);
 ScrollReveal().reveal('.slide-right', slideRight);
+ScrollReveal().reveal('.delay-025', {delay: 250});
+ScrollReveal().reveal('.delay-05', {delay: 500});
 ScrollReveal().reveal('.delay-1', {delay: 1000});
 ScrollReveal().reveal('.delay-2', {delay: 2000});
 ScrollReveal().reveal('.delay-3', {delay: 3000});
@@ -37,7 +39,8 @@ ScrollReveal().reveal('.delay-8', {delay: 8000});
 ScrollReveal().reveal('.delay-9', {delay: 9000});
 ScrollReveal().reveal('.delay-10', {delay: 10000});
 
-
+ScrollReveal().reveal('.delay-m-025', {delay: 250, mobile: false});
+ScrollReveal().reveal('.delay-m-05', {delay: 500, mobile: false});
 ScrollReveal().reveal('.delay-m-1', {delay: 1000, mobile: false});
 ScrollReveal().reveal('.delay-m-2', {delay: 2000, mobile: false});
 ScrollReveal().reveal('.delay-m-3', {delay: 3000, mobile: false});
