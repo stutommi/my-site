@@ -24,10 +24,17 @@ body {
     z-index: 300;
 }
 
+.pb-50 {
+  padding-bottom: 50vh;
+}
+
 a:hover {
   text-decoration: none;
 }
 
+#nav {
+  z-index: 1000;
+}
 
 // HEXAGONS
 .hexagon-green {
@@ -110,13 +117,18 @@ html.sr .load-hidden {
 .header-bar {
     width: 70px;
     height: 4px;
-    margin: 25px 0 50px 0;
+    margin: 25px 0 40px 0;
     // background-color: $primary;
 }
 
 .full-page {
     height: 100vh;
 }
+
+.full-page-3 {
+  height: 300vh;
+}
+
 canvas {
     opacity: 0;
     width: 100%;
@@ -132,6 +144,18 @@ canvas {
 
 .a-pad {
      padding-top: 56px;
+}
+
+.parallax {
+  min-height: 100%;
+  background-attachment: fixed;
+  background-size: 102%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.parallax-section-1 {
+  background-image: url("../media/swq_tommi_tenho_3.jpg");
 }
 
 #home-info {
@@ -283,7 +307,12 @@ canvas {
           }
         }
 
-
+        .parallax {
+          background-attachment: scroll;
+        }
+        .parallax-section-1 {
+          background-size: 150%;
+        }
     }
 
     /* Small devices (tablets, 768px and up) */

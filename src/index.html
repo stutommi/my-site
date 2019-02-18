@@ -51,7 +51,6 @@
 
     </div>
     <!-- Nav -->
-
     <nav class="sticky-top" id="nav">
         <div class="navbar nav navbar-expand-lg navbar-dark bg-dark">
             <div>
@@ -89,12 +88,11 @@
         </div>
     </nav>
 
+    <!-- Home -->
 
     <div class='container-fluid h-100 bg-light text-center'>
-
-        <!-- Home -->
-        <section>
-            <div class="row justify-content-center" id="home-header">
+        <section class="min-vh-100">
+            <div class="row justify-content-center">
                 <div class="col-auto">
                     <h1 class="font-weight-bold text-center text-dark slide-left a-pad" id="home">Tommi Tampio</h1>
                 </div>
@@ -106,14 +104,15 @@
             </div>
             <div class="row justify-content-center mb-lg-4">
                 <div class="col-auto reveal">
-                    <p class="lead text-center text-dark">This site is a presentation of my two sides:<br> <span class=" text-success">Music</span>
-                        and <span class="text-info">Web development</span>.</p>
+                    <p class="lead text-center text-dark">This site is a presentation of my two sides:<br> <a href="#music"
+                            class="text-success">Music</a>
+                        and <a href="#web" class="text-info">Web development</a>.</p>
                     <p class="border-top pt-2">You can navigate straight to either depending on your interests!</p>
                     <p class="d-lg-none mt-4">Touch the buttons for some quick facts!</p>
                 </div>
             </div>
             <div class="row justify-content-center d-lg-none">
-                <div class="col-sm-6 justify-content-around d-flex">
+                <div class="col-sm-6 justify-content-around d-flex mb-4">
                     <button class="fact-button btn btn-success" type="button" data-toggle="collapse" data-target="#music-facts"
                         aria-expanded="false" aria-controls="music-facts">Music</button>
                     <button class="fact-button btn btn-info" type="button" data-toggle="collapse" data-target="#web-facts"
@@ -149,9 +148,8 @@
                                 </div>
                                 <div class="card-body pl-0 pr-0">
                                     <h5 class="card-title text-muted font-weight-bold">Performing</h5>
-                                    <p class="card-text text-muted text-small">Lorem ipsum dolor sit amet. Lorem,
-                                        ipsum.</p>
-
+                                    <p class="card-text text-muted text-small">Moving people through music is one of
+                                        the best feelings I get.</p>
                                 </div>
                             </div>
                         </div>
@@ -166,8 +164,8 @@
                                 </div>
                                 <div class="card-body pl-0 pr-0">
                                     <h5 class="card-title text-muted font-weight-bold">Composing</h5>
-                                    <p class="card-text text-muted text-small">Lorem ipsum dolor sit amet. Lorem,
-                                        ipsum.</p>
+                                    <p class="card-text text-muted text-small">I've composed music for many years.
+                                        Album coming this year!</p>
                                 </div>
                             </div>
                         </div>
@@ -180,8 +178,8 @@
                                 </div>
                                 <div class="card-body pl-0 pr-0">
                                     <h5 class="card-title text-muted font-weight-bold">Improvising</h5>
-                                    <p class="card-text text-muted text-small">Lorem ipsum dolor sit amet. Lorem,
-                                        ipsum.</p>
+                                    <p class="card-text text-muted text-small">Improvisation in music is one the most
+                                        fulfilling things for me.</p>
                                 </div>
                             </div>
                         </div>
@@ -199,8 +197,8 @@
                                 </div>
                                 <div class="card-body pl-0 pr-0">
                                     <h5 class="card-title text-muted font-weight-bold">Websites</h5>
-                                    <p class="card-text text-muted text-small">Lorem ipsum dolor sit amet. Lorem,
-                                        ipsum.</p>
+                                    <p class="card-text text-muted text-small">I'm excited about dynamic and responsive
+                                        sites. <a href="#contact">Should we make one for you?</a></p>
                                     <!-- <a href="#guitar-lessons" class="btn btn-primary">Lessons?</a> -->
                                 </div>
                             </div>
@@ -212,8 +210,8 @@
                                 </div>
                                 <div class="card-body pl-0 pr-0">
                                     <h5 class="card-title text-muted font-weight-bold">Looking for</h5>
-                                    <p class="card-text text-muted text-small">Lorem ipsum dolor sit amet. Lorem,
-                                        ipsum.</p>
+                                    <p class="card-text text-muted text-small">Awesome people and projects to work
+                                        with.</p>
                                 </div>
                             </div>
                         </div>
@@ -228,8 +226,8 @@
                                 </div>
                                 <div class="card-body pl-0 pr-0">
                                     <h5 class="card-title text-muted font-weight-bold">Frontend</h5>
-                                    <p class="card-text text-muted text-small">Lorem ipsum dolor sit amet. Lorem,
-                                        ipsum.</p>
+                                    <p class="card-text text-muted text-small">This is what I'm currently dabbling with
+                                        the most.</p>
                                 </div>
                             </div>
                         </div>
@@ -242,8 +240,8 @@
                                 </div>
                                 <div class="card-body pl-0 pr-0">
                                     <h5 class="card-title text-muted font-weight-bold">Backend</h5>
-                                    <p class="card-text text-muted text-small">Lorem ipsum dolor sit amet. Lorem,
-                                        ipsum.</p>
+                                    <p class="card-text text-muted text-small">I spent a little bit in here aswell.
+                                        Hopefully more in the future!</p>
                                 </div>
                             </div>
                         </div>
@@ -252,103 +250,92 @@
             </div>
 
         </section>
-        <div class='container-fluid h-100'>
 
-            <!-- Music -->
-            <section>
-                <div class="row justify-content-center">
-                    <div class="col-auto">
-                        <h1 class="font-weight-bold a-pad text-center text-dark slide-left" id="music">Music</h1>
-                    </div>
+        <!-- Music -->
+        <section style="background-color: black">
+            <div class="row justify-content-center text-light parallax parallax-section-1 a-pad bg-custom">
+                <div class="col-auto ">
+                    <h1 class="font-weight-bold a-pad text-center slide-left" id="music">Music</h1>
                 </div>
-                <div class="row justify-content-center">
-                    <div class="col-auto">
-                        <div class="header-bar text-center bg-dark slide-left delay-m-1"></div>
-                    </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <div class="header-bar bg-light text-center slide-left delay-m-1 mb-5"></div>
                 </div>
-                <div class="row">
-                    <div class="col-sm-12">
-                        <!-- <img class="d-block vw-50 rounded-circle" src="./media/Tommi SWQ tenho 1.jpg" alt="Second slide"> -->
-                    </div>
-                </div>
-            </section>
+            </div>
+        </section>
 
-            <!-- Guitar Lessons -->
-            <section>
-                <div class="row justify-content-center">
-                    <div class="col-auto">
-                        <h1 class="font-weight-bold a-pad text-center text-dark slide-left" id="guitar-lessons">Guitar
-                            Lessons</h1>
-                    </div>
+        <!-- Guitar Lessons -->
+        <section>
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <h1 class="font-weight-bold a-pad text-center text-dark slide-left" id="guitar-lessons">Guitar
+                        Lessons</h1>
                 </div>
-                <div class="row justify-content-center">
-                    <div class="col-auto">
-                        <div class="header-bar text-center bg-dark slide-left delay-m-1"></div>
-                    </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <div class="header-bar text-center bg-dark slide-left delay-m-1"></div>
                 </div>
-            </section>
-            <!-- Web Developing -->
-            <section>
-                <div class="row justify-content-center">
-                    <div class="col-auto">
-                        <h1 class="font-weight-bold a-pad text-center text-dark slide-left" id="web">Web
-                            Developing</h1>
-                    </div>
+            </div>
+        </section>
+        <!-- Web Developing -->
+        <section>
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <h1 class="font-weight-bold a-pad text-center text-dark slide-left" id="web">Web
+                        Developing</h1>
                 </div>
-                <div class="row justify-content-center">
-                    <div class="col-auto">
-                        <div class="header-bar text-center bg-dark slide-left delay-m-1"></div>
-                    </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <div class="header-bar text-center bg-dark slide-left delay-m-1"></div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <!-- Skills -->
-            <section>
-                <div class="row justify-content-center">
-                    <div class="col-auto">
-                        <h1 class="font-weight-bold a-pad text-center text-dark slide-left" id="skills">Skills</h1>
-                    </div>
+        <!-- Skills -->
+        <section>
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <h1 class="font-weight-bold a-pad text-center text-dark slide-left" id="skills">Skills</h1>
                 </div>
-                <div class="row justify-content-center">
-                    <div class="col-auto">
-                        <div class="header-bar text-center bg-dark slide-left delay-m-1"></div>
-                    </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <div class="header-bar text-center bg-dark slide-left delay-m-1"></div>
                 </div>
-            </section>
+            </div>
 
-            <!-- Projects -->
-            <section>
-                <div class="row justify-content-center">
-                    <div class="col-auto">
-                        <h1 class="font-weight-bold a-pad text-center text-dark slide-left" id="projects">Projects</h1>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-auto">
-                        <div class="header-bar text-center bg-dark slide-left delay-m-1"></div>
-                    </div>
-                </div>
-            </section>
+        </section>
 
-            <!-- Contact -->
-            <section>
-                <div class="row justify-content-center">
-                    <div class="col-auto">
-                        <h1 class="font-weight-bold a-pad text-center text-dark slide-left" id="contact">Contact</h1>
-                    </div>
+        <!-- Projects -->
+        <section>
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <h1 class="font-weight-bold a-pad text-center text-dark slide-left" id="projects">Projects</h1>
                 </div>
-                <div class="row justify-content-center">
-                    <div class="col-auto">
-                        <div class="header-bar text-center bg-dark slide-left delay-m-1"></div>
-                    </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <div class="header-bar text-center bg-dark slide-left delay-m-1"></div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-
-
-        </div>
-    </div>
-    </div>
+        <!-- Contact -->
+        <section>
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <h1 class="font-weight-bold a-pad text-center text-dark slide-left" id="contact">Contact</h1>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <div class="header-bar text-center bg-dark slide-left delay-m-1"></div>
+                </div>
+            </div>
+        </section>
     </div>
     <!-- Scripts -->
     <script src="/js/jquery.min.js"></script>
