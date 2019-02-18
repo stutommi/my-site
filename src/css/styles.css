@@ -14,63 +14,59 @@ body {
 a:hover {
   text-decoration: none; }
 
-#hexagon-green {
+.hexagon-green {
+  margin: 30px 0 15px 0;
+  width: 75px;
+  height: 41.25px;
+  background: #45c804;
+  position: relative; }
+  .hexagon-green:before {
+    content: "";
+    position: absolute;
+    top: -18.75px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 37.5px solid transparent;
+    border-right: 37.5px solid transparent;
+    border-bottom: 18.75px solid #45c804; }
+  .hexagon-green:after {
+    content: "";
+    position: absolute;
+    bottom: -18.75px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 37.5px solid transparent;
+    border-right: 37.5px solid transparent;
+    border-top: 18.75px solid #45c804; }
+
+.hexagon-teal {
   margin: 40px 0 20px 0;
   width: 100px;
   height: 55px;
-  background: #28a745;
+  background: #04c1c8;
   position: relative; }
-
-#hexagon-green:before {
-  content: "";
-  position: absolute;
-  top: -25px;
-  left: 0;
-  width: 0;
-  height: 0;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-bottom: 25px solid #28a745; }
-
-#hexagon-green:after {
-  content: "";
-  position: absolute;
-  bottom: -25px;
-  left: 0;
-  width: 0;
-  height: 0;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-top: 25px solid #28a745; }
-
-#hexagon-teal {
-  margin: 40px 0 20px 0;
-  width: 100px;
-  height: 55px;
-  background: #17a2b8;
-  position: relative; }
-
-#hexagon-teal:before {
-  content: "";
-  position: absolute;
-  top: -25px;
-  left: 0;
-  width: 0;
-  height: 0;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-bottom: 25px solid #17a2b8; }
-
-#hexagon-teal:after {
-  content: "";
-  position: absolute;
-  bottom: -25px;
-  left: 0;
-  width: 0;
-  height: 0;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-top: 25px solid #17a2b8; }
+  .hexagon-teal:before {
+    content: "";
+    position: absolute;
+    top: -25px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 25px solid #04c1c8; }
+  .hexagon-teal:after {
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 25px solid #04c1c8; }
 
 html.sr .load-hidden {
   visibility: hidden; }

@@ -29,6 +29,9 @@ var rotate = {
     mobile: false
 }
 
+// Reveal
+ScrollReveal().reveal('.reveal');
+
 // Delays
 ScrollReveal().reveal('.slide-up', slideUp);
 ScrollReveal().reveal('.slide-left', slideLeft);
