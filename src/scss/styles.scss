@@ -1,8 +1,19 @@
 // NEEDS FIXES / OPTIMIZATION
 
+// scss/main.scss
+@import "../../node_modules/rfs/scss.scss";
+
+// Variables
+
+
+
 html, body {
     margin: 0;
     min-height: 100vh;
+}
+
+body {
+  position: relative;
 }
 
 .sticky-top {
@@ -10,7 +21,10 @@ html, body {
     position: -webkit-sticky;
     top: 0;
     z-index: 300;
+}
 
+a:hover {
+  text-decoration: none;
 }
 
 #hexagon-green {
@@ -27,10 +41,13 @@ html, body {
   left: 0;
   width: 0;
   height: 0;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-bottom: 25px solid #28a745;
+  border: {
+    left: 50px solid transparent;
+    right: 50px solid transparent;
+    bottom: 25px solid #28a745;
+  }
 }
+
 #hexagon-green:after {
   content: "";
   position: absolute;
@@ -73,10 +90,6 @@ html, body {
   border-top: 25px solid #17a2b8;
 }
 
-body {
-    position: relative;
-}
-
 html.sr .load-hidden {
     visibility: hidden;
 }
@@ -84,7 +97,7 @@ html.sr .load-hidden {
 .header-bar {
     width: 70px;
     height: 4px;
-    margin: 25px 0 75px 0;
+    margin: 25px 0 50px 0;
     // background-color: $primary;
 }
 

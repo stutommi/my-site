@@ -1,6 +1,8 @@
 // Placing bootstrap scrollspy on body
-$('body').scrollspy({ target: '#nav' })
+$('body').scrollspy({ target: '#nav', offset: 57})
 
+
+// Music button functionality
 $(document).ready(function() {
   var bgMusic = $("#bgMusic")[0];
   var btn = $(".playbutton");
@@ -35,7 +37,7 @@ $('a[href*="#"]')
         // Only prevent default if animation is actually gonna happen
         event.preventDefault();
         $('html, body').animate({
-          scrollTop: target.offset().top
+          scrollTop: target.offset().top - 56
         }, 500, function() {
           // Callback after animation
           // Must change focus!
@@ -50,6 +52,12 @@ $('a[href*="#"]')
         });
       }
     }
+  });
+
+  // Hides sibling buttons div on click
+  $('.fact-button').click(function(){
+    var sibDiv = $(this).siblings().attr('data-target');
+    $(sibDiv).removeClass('show');
   });
 
 
