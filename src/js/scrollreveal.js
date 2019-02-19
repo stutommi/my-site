@@ -49,7 +49,7 @@ ScrollReveal().reveal('.delay-8', {delay: 8000});
 ScrollReveal().reveal('.delay-9', {delay: 9000});
 ScrollReveal().reveal('.delay-10', {delay: 10000});
 
-// Non-mobiles delays
+// Non-mobile delays
 ScrollReveal().reveal('.delay-m-025', {delay: 250, mobile: false});
 ScrollReveal().reveal('.delay-m-05', {delay: 500, mobile: false});
 ScrollReveal().reveal('.delay-m-1', {delay: 1000, mobile: false});
@@ -63,9 +63,16 @@ ScrollReveal().reveal('.delay-m-8', {delay: 8000, mobile: false});
 ScrollReveal().reveal('.delay-m-9', {delay: 9000, mobile: false});
 ScrollReveal().reveal('.delay-m-10', {delay: 10000, mobile: false});
 
-// Intervals
-ScrollReveal().reveal('.sequenced-1', { interval: 100, mobile: false});
-ScrollReveal().reveal('.sequenced-2', { interval: 100, mobile: false});
+// Non-mobile Intervals
+ScrollReveal().reveal('.sequenced-m-1', { interval: 100, mobile: false});
+ScrollReveal().reveal('.sequenced-m-2', { interval: 100, mobile: false});
+ScrollReveal().reveal('.sequenced-m-3', { interval: 200, mobile: false});
+
+// Non-mobile Intervals
+ScrollReveal().reveal('.sequenced-1', { interval: 100});
+ScrollReveal().reveal('.sequenced-2', { interval: 100});
+ScrollReveal().reveal('.sequenced-3', { interval: 200});
+ScrollReveal().reveal('.sequenced-4', { interval: 100, origin: 'left', distance: '100%'});
 
 // Rotattions
 ScrollReveal().reveal('.rotate', rotate);

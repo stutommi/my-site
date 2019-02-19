@@ -1,6 +1,15 @@
+.teal {
+  background-color: #04c1c8; }
+
+.bg-gray {
+  background-color: #cccccc; }
+
 html, body {
   margin: 0;
-  min-height: 100vh; }
+  min-height: 100vh;
+  -webkit-font-feature-settings: "lnum";
+  -moz-font-feature-settings: "lnum";
+  font-feature-settings: "lnum"; }
 
 body {
   position: relative; }
@@ -13,6 +22,9 @@ img {
   position: -webkit-sticky;
   top: 0;
   z-index: 300; }
+
+ul {
+  list-style: none; }
 
 .pb-50 {
   padding-bottom: 50vh; }
@@ -122,7 +134,7 @@ canvas {
   background-image: url("../media/swq_tommi_tenho_3.jpg"); }
 
 .parallax-section-2 {
-  background-image: url("../media/SWQ_v2.jpg"); }
+  background-image: url("../media/SWQ_v2-min.jpg"); }
 
 .parallax-section-3 {
   background-image: url("../media/web_developing.jpg"); }
@@ -151,6 +163,17 @@ canvas {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
   padding-right: 0; }
+
+.chart-number {
+  position: absolute;
+  right: 5px;
+  z-index: 11; }
+
+.chart-bar {
+  z-index: 10; }
+
+.chart-tag {
+  z-index: 11; }
 
 #cursor {
   color: white;
