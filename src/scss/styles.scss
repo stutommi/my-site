@@ -7,12 +7,23 @@
 $teal: hsl(182, 96%, 40%);
 $green: hsl(100, 96%, 40%);
 
-.teal {
+.bg-teal {
   background-color: $teal;
 }
 
+.bg-green {
+  background-color: $green;
+}
 .bg-gray {
   background-color: hsl(0,0,80)
+}
+
+.bg-header {
+  background-color: hsla(1, 0, 0, 0.2)
+}
+
+.bg-header-web {
+  background-color: hsla(1, 0, 5, 0.7)
 }
 
 html, body {
@@ -29,6 +40,37 @@ body {
 
 img {
   background-attachment: fixed;
+}
+
+.w-10 {
+  width: 10%
+}
+.w-20 {
+  width: 20%
+}
+.w-30 {
+  width: 30%
+}
+.w-40 {
+  width: 40%
+}
+.w-45 {
+  width: 45%
+}
+.w-55 {
+  width: 55%
+}
+.w-65 {
+  width: 65%
+}
+.w-70 {
+  width: 70%
+}
+.w-80 {
+  width: 80%
+}
+.w-90 {
+  width: 90%
 }
 
 .sticky-top {
@@ -225,7 +267,7 @@ canvas {
 
 .chart-number {
   position: absolute;
-  right: 5px;
+  right: 12px;
   z-index: 11;
 }
 
@@ -364,10 +406,13 @@ canvas {
         .parallax {
           background-attachment: scroll;
         }
-        .parallax-section-1,.parallax-section-2, .parallax-section-3 {
-          background-size: 150%;
+        .parallax-section-2, .parallax-section-3 {
+          background-size: 160%;
         }
 
+        .parallax-section-1 {
+          background-size: 170%;
+        }
 
         img {
           background-attachment: scroll;
