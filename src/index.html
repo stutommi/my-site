@@ -21,10 +21,10 @@
 </head>
 
 <body>
-    <!-- Home -->
     <canvas></canvas>
-    <div class='container-fluid p-0 full-page' id='container'>
-
+    <!-- Home -->
+    <div class='container-fluid p-0 full-page height-fix' id='container'>
+        
         <audio id="bgMusic" src="./media/lattari_mix3.mp3">
             Your browser does not support the
             <code>audio</code> element.
@@ -71,20 +71,26 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
-            <div class="collapse nav navbar-collapse navbar-dark bg-dark" id="navbarNavAltMarkup1">
-                <div class="navbar-nav nav w-100 justify-content-lg-around border-bottom-0">
-                    <a class="nav-item nav-link " href="#music">Music</a>
-                    <a class="nav-item nav-link" href="#guitar-lessons">Guitar Lessons?</a>
-                    <a class="nav-item nav-link d-lg-none" href="#contact">Contact</a>
+            <div class="collapse navbar-collapse justify-content-lg-around" id="navbarNavAltMarkup1">
+                <div class="nav navbar-dark bg-dark justify-content-lg-around w-100">
+                    <div class="navbar-nav nav w-100 justify-content-lg-around" >
+                        <a class="nav-item nav-link " href="#music">Music</a>
+                        <a class="nav-item nav-link" href="#guitar-lessons">Guitar Lessons?</a>
+                        <a class="nav-item nav-link d-lg-none" href="#contact">Contact</a>
+                    </div>
                 </div>
+
             </div>
-            <div class="collapse nav navbar-collapse navbar-dark bg-dark" id="navbarNavAltMarkup2">
-                <div class="navbar-nav nav w-100 justify-content-lg-around">
-                    <a class="nav-item nav-link" href="#web">WebDev</a>
-                    <a class="nav-item nav-link" href="#skills">Skills?</a>
-                    <a class="nav-item nav-link" href="#projects">Projects</a>
-                    <a class="nav-item nav-link" href="#contact">Contact</a>
+            <div class="collapse navbar-collapse justify-content-lg-around" id="navbarNavAltMarkup2">
+                <div class="nav navbar-dark bg-dark justify-content-lg-around w-100">
+                    <div class="navbar-nav nav w-100 justify-content-lg-around">
+                        <a class="nav-item nav-link" href="#web">WebDev</a>
+                        <a class="nav-item nav-link" href="#skills">Skills?</a>
+                        <a class="nav-item nav-link" href="#projects">Projects</a>
+                        <a class="nav-item nav-link" href="#contact">Contact</a>
+                    </div>
                 </div>
+
             </div>
         </div>
     </nav>
@@ -112,7 +118,7 @@
                     <p class="d-lg-none mt-4">Touch the buttons for some quick facts!</p>
                 </div>
             </div>
-            <div class="row justify-content-center d-lg-none">
+            <div class="row justify-content-center d-md-none">
                 <div class="col-sm-6 justify-content-around d-flex mb-4">
                     <button class="fact-button btn btn-success" type="button" data-toggle="collapse" data-target="#music-facts"
                         aria-expanded="false" aria-controls="music-facts">Music</button>
@@ -403,63 +409,63 @@
                 <div class="col-12 pl-2 pr-2 col-md-6 bg-light d-flex flex-column text-left justify-content-around text-small text-light pr-0 pl-0">
                     <div class="w-100 bg-gray rounded-right d-inline-flex mb-4">
                         <div class=" chart-tag w-25 text-center bg-teal">HTML</div>
-                        <span class="text-small chart-number">60%</span>
+                        <span class="text-small chart-number text-secondary">60%</span>
                         <div class="w-75 rounded-right sequenced-4 position-absolute bg-info chart-bar">-></div>
                     </div>
                     <div class="w-100 bg-gray rounded-right d-inline-flex mb-4">
                         <div class=" chart-tag w-25 text-center bg-teal">CSS</div>
-                        <span class="text-small chart-number">60%</span>
+                        <span class="text-small chart-number text-secondary">60%</span>
                         <div class="w-75 rounded-right sequenced-4 position-absolute bg-info chart-bar">-></div>
                     </div>
                     <div class="w-100 bg-gray rounded-right d-inline-flex mb-4">
                         <div class=" chart-tag w-25 text-center bg-teal">JavaScript</div>
-                        <span class="text-small chart-number">60%</span>
+                        <span class="text-small chart-number text-secondary">60%</span>
                         <div class="w-75 rounded-right sequenced-4 position-absolute bg-info chart-bar">-></div>
                     </div>
                     <div class="w-100 bg-gray rounded-right d-inline-flex mb-4">
                         <div class=" chart-tag w-25 text-center bg-teal">React</div>
-                        <span class="text-small chart-number">50%</span>
+                        <span class="text-small chart-number text-secondary">50%</span>
                         <div class="w-65 rounded-right sequenced-4 position-absolute bg-info chart-bar">-></div>
                     </div>
                     <div class="w-100 bg-gray rounded-right d-inline-flex mb-4">
                         <div class=" chart-tag w-25 text-center bg-teal">Bootstrap</div>
-                        <span class="text-small chart-number">40%</span>
+                        <span class="text-small chart-number text-secondary">40%</span>
                         <div class="w-55 rounded-right sequenced-4 position-absolute bg-info chart-bar">-></div>
                     </div>
                     <div class="w-100 bg-gray rounded-right d-inline-flex mb-4">
                         <div class=" chart-tag w-25 text-center bg-teal">Node</div>
-                        <span class="text-small chart-number">30%</span>
+                        <span class="text-small chart-number text-secondary">30%</span>
                         <div class="w-45 rounded-right sequenced-4 position-absolute bg-info chart-bar">-></div>
                     </div>
                     <div class="w-100 bg-gray rounded-right d-inline-flex mb-4">
                         <div class=" chart-tag w-25 text-center bg-teal">Express</div>
-                        <span class="text-small chart-number">30%</span>
+                        <span class="text-small chart-number text-secondary">30%</span>
                         <div class="w-45 rounded-right sequenced-4 position-absolute bg-info chart-bar">-></div>
                     </div>
                     <div class="w-100 bg-gray rounded-right d-inline-flex mb-4">
                         <div class=" chart-tag w-25 text-center bg-teal">MongoDB</div>
-                        <span class="text-small chart-number">20%</span>
+                        <span class="text-small chart-number text-secondary">20%</span>
                         <div class="w-40 rounded-right sequenced-4 position-absolute bg-info chart-bar">-></div>
                     </div>
                     <div class="w-100 bg-gray rounded-right d-inline-flex mb-4">
                         <div class=" chart-tag w-25 text-center bg-teal">SQLite</div>
-                        <span class="text-small chart-number">20%</span>
+                        <span class="text-small chart-number text-secondary">20%</span>
                         <div class="w-40 rounded-right sequenced-4 position-absolute bg-info chart-bar">-></div>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-4 bg-light">
-                    <div class="pb-5">
-                        <h1>Note</h1>
-                        <p>This is subjective estimate of my skills in languages/frameworks combined with my time spent
-                            learning and using them</p>
-                    </div>
-                    <div class="border-top pt-5">
+                    <div class="border-bottom pt-3 pb-3">
                         <p>Other basic knowledge:</p>
                         <ul class="list-group">
                             <li class="list-item">Github</li>
                             <li class="list-item">Command line</li>
                             <li class="list-item">Chrome DevTools</li>
                         </ul>
+                    </div>
+                    <div class="pt-5">
+                        <h1>Note</h1>
+                        <p>This is subjective estimate of my skills in languages/frameworks combined with my time spent
+                            learning and using them</p>
                     </div>
                 </div>
 
