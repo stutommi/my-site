@@ -232,8 +232,11 @@ canvas {
   top: 10px;
   left: 10px; }
 
+#preload {
+  display: none; }
+
 .playbutton {
-  border: 0;
+  border: 5px;
   background: transparent;
   box-sizing: border-box;
   width: 0;

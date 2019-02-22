@@ -24,7 +24,7 @@
     <canvas></canvas>
     <!-- Home -->
     <div class='container-fluid p-0 full-page height-fix' id='container'>
-        
+
         <audio id="bgMusic" src="./media/lattari_mix3.mp3">
             Your browser does not support the
             <code>audio</code> element.
@@ -73,7 +73,7 @@
             </div>
             <div class="collapse navbar-collapse justify-content-lg-around" id="navbarNavAltMarkup1">
                 <div class="nav navbar-dark bg-dark justify-content-lg-around w-100">
-                    <div class="navbar-nav nav w-100 justify-content-lg-around" >
+                    <div class="navbar-nav nav w-100 justify-content-lg-around">
                         <a class="nav-item nav-link " href="#music">Music</a>
                         <a class="nav-item nav-link" href="#guitar-lessons">Guitar Lessons?</a>
                         <a class="nav-item nav-link d-lg-none" href="#contact">Contact</a>
@@ -358,8 +358,7 @@
             </div>
             <div class="row justify-content-center min-half-page align-content-center">
                 <div class="col-md-6 pt-5 text-left">
-                    <h2 class="text-center"><span>Short</span> <span>Hi</span><span
-                            class="text-info sequenced-5">story</span></h2>
+                    <h2 class="text-center"><span>Short</span> <span>Hi</span><span class="text-info sequenced-5">story</span></h2>
                     <p class="small mt-4 mb-4 text-center"><kbd>(let experience = 0; experience < lifetime;
                                 experience++)</kbd> </p> <p>It
                                 started at my friends place on fall 2018. We had no idea what coding was about and I
@@ -405,7 +404,12 @@
             </div>
 
             <!-- Skills chart -->
-            <div class="row min-half-page justify-content-around">
+            <div class="row min-half-page justify-content-around border-bottom">
+                <div class="pt-2 pb-5">
+                    <p class="lead border-bottom">Note</p>
+                    <p>This is subjective estimate of my skills in languages/frameworks combined with my time spent
+                        learning and using them.</p>
+                </div>
                 <div class="col-12 pl-2 pr-2 col-md-6 bg-light d-flex flex-column text-left justify-content-around text-small text-light pr-0 pl-0">
                     <div class="w-100 bg-gray rounded-right d-inline-flex mb-4">
                         <div class=" chart-tag w-25 text-center bg-teal">HTML</div>
@@ -453,23 +457,31 @@
                         <div class="w-40 rounded-right sequenced-4 position-absolute bg-info chart-bar">-></div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-4 bg-light">
-                    <div class="border-bottom pt-3 pb-3">
-                        <p>Other basic knowledge:</p>
+                <div class="col-sm-12 col-md-4 bg-light d-flex flex-column justify-content-between mb-4">
+
+                    <div class="border-bottom pb-4">
+                        <p class=""><u>Other basic knowledge:</u></p>
                         <ul class="list-group">
                             <li class="list-item">Github</li>
                             <li class="list-item">Command line</li>
                             <li class="list-item">Chrome DevTools</li>
                         </ul>
                     </div>
-                    <div class="pt-5">
-                        <h1>Note</h1>
-                        <p>This is subjective estimate of my skills in languages/frameworks combined with my time spent
-                            learning and using them</p>
+                    <div>
+                        <p class="lead">Content I'm striving to produce</p>
+                        <ul class="list-group align-items-center">
+                            <li class="list-item rounded w-25 bg-teal text-white border-bottom border-secondary">Dynamic</li>
+                            <li class="list-item p-1 rounded w-50 bg-teal text-white border-bottom border-secondary">Fast
+                                load</li>
+                            <li class="list-item p-2 rounded w-75 bg-teal text-white border-bottom border-secondary">Lag
+                                free</li>
+                            <li class="list-item p-3 rounded w-100 bg-teal text-white border-bottom border-secondary">Responsive</li>
+                        </ul>
                     </div>
-                </div>
 
+                </div>
             </div>
+
         </section>
 
         <!-- Projects -->
@@ -482,6 +494,54 @@
             <div class="row justify-content-center">
                 <div class="col-auto">
                     <div class="header-bar text-center bg-dark slide-left delay-m-05"></div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-sm-10">
+                    <div class="card m-auto bg-light" id="mysite">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h2 class="card-title">This site!</h2>
+                            <p class="card-text">Some info about making this site</p>
+                            <button data-toggle="collapse" data-target="#card-mysite" class="btn btn-primary">Show me
+                                more!</button>
+                        </div>
+                    </div>
+                    <div id="card-mysite" class="collapse" aria-labelledby="headingOne" data-parent="#mysite">
+                        <h4>Frameworks/Libraries</h4>
+                        <ul class="list-group">
+                            <li class="list-item">Bootstrap</li>
+                            <li class="list-item">Sass</li>
+                            <li class="list-item">Scrollreveal</li>
+                            <li></li>
+                        </ul>
+                        <p>I'm very new to designing. Before starting out with this site I decided to look for other
+                            portfolio sites for references. I really liked the simplicity and lively flow of this guys <a href="http//:findmatthew.com/" target="_blank">site</a>
+                            . If you
+                            take a visit to the site, you can see just how much I aimed to recreate</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-10">
+                    <div class="card m-auto bg-light">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body" id="kaste">
+                            <h2 class="card-title">Kaste</h2>
+                            <p class="card-text">funky MERN action with sensors</p>
+                            <button data-toggle="collapse" data-target="#card-kaste" class="btn btn-primary">Show me
+                                    more!</button>
+                        </div>
+                    </div>
+                    <div id="card-kaste" class="collapse" aria-labelledby="headingOne" data-parent="#kaste">
+                            <h4>Frameworks/Libraries</h4>
+                            <ul class="list-group">
+                                <li class="list-item">MongoDB</li>
+                                <li class="list-item">Express</li>
+                                <li class="list-item">React</li>
+                                <li class="list-item">Node</li>
+                                <li></li>
+                            </ul>
+                            <p>This app is running on my raspberry PI <a href="http://88.113.135.116:3000/" target="_blank">Kaste</a></p>
+                        </div>
                 </div>
             </div>
         </section>
@@ -500,12 +560,13 @@
             </div>
         </section>
     </div>
+
     <!-- Scripts -->
     <script src="/js/jquery.min.js"></script>
     <script src="/js/popper.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
     <script src='./js/canvas.js'></script>
-    <script src='./js/home.js'></script>
+    <script src='./js/index.js'></script>
     <script src='./js/scrollreveal.js'></script>
 
 </body>

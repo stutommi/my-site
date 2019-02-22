@@ -10,6 +10,8 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
   var h = $(this).height();
   $(this).height(h)
  })
+
+ $('.parallax').css('background-attachment', 'scroll');
 }
 
 // Music button functionality
