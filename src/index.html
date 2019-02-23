@@ -457,7 +457,7 @@
                         <div class="w-40 rounded-right sequenced-4 position-absolute bg-info chart-bar">-></div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-4 bg-light d-flex flex-column justify-content-between mb-4">
+                <div class="col-sm-10 col-md-4 bg-light d-flex flex-column justify-content-between mb-4">
 
                     <div class="border-bottom pb-4">
                         <p class=""><u>Other basic knowledge:</u></p>
@@ -496,53 +496,105 @@
                     <div class="header-bar text-center bg-dark slide-left delay-m-05"></div>
                 </div>
             </div>
+
+            <!-- My-site card-->
             <div class="row justify-content-center">
-                <div class="col-lg-6 col-sm-10">
+                <div class="col-lg-6 col-sm-12 mb-4">
                     <div class="card m-auto bg-light" id="mysite">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
+                        <div class="card-footer card-bg card-img-top"></div>
+                        <div class="img-fluid img-tommi" style="height: 200px; width: auto;" alt="Pic of Tommi"></div>
+                        <div class="card-body bg-transparent-teal">
                             <h2 class="card-title">This site!</h2>
-                            <p class="card-text">Some info about making this site</p>
-                            <button data-toggle="collapse" data-target="#card-mysite" class="btn btn-primary">Show me
-                                more!</button>
-                        </div>
-                    </div>
-                    <div id="card-mysite" class="collapse" aria-labelledby="headingOne" data-parent="#mysite">
-                        <h4>Frameworks/Libraries</h4>
-                        <ul class="list-group">
-                            <li class="list-item">Bootstrap</li>
-                            <li class="list-item">Sass</li>
-                            <li class="list-item">Scrollreveal</li>
-                            <li></li>
-                        </ul>
-                        <p>I'm very new to designing. Before starting out with this site I decided to look for other
-                            portfolio sites for references. I really liked the simplicity and lively flow of this guys <a href="http://findmatthew.com/" target="_blank">site</a>. If you
-                            take a visit to the site, you can see just how much I aimed to recreate</p>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-sm-10">
-                    <div class="card m-auto bg-light">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body" id="kaste">
-                            <h2 class="card-title">Kaste</h2>
-                            <p class="card-text">funky MERN action with sensors</p>
-                            <button data-toggle="collapse" data-target="#card-kaste" class="btn btn-primary">Show me
+                            <p class="card-text">Website made with Bootstrap.</p>
+                            <div class="btn-group">
+                                <button data-toggle="collapse" data-target="#card-mysite" class="btn btn-primary">Show
+                                    me
                                     more!</button>
+                                <a href="https://github.com/stutommi/my-site" target="_blank" class="btn btn-secondary text-white">Github
+                                    <i class="fab fa-github fa-lg "></i></a>
+                            </div>
                         </div>
-                    </div>
-                    <div id="card-kaste" class="collapse" aria-labelledby="headingOne" data-parent="#kaste">
-                            <h4>Frameworks/Libraries</h4>
-                            <ul class="list-group">
-                                <li class="list-item">MongoDB</li>
-                                <li class="list-item">Express</li>
-                                <li class="list-item">React</li>
-                                <li class="list-item">Node</li>
-                                <li></li>
+                        <div id="card-mysite" class="collapse border" aria-labelledby="headingOne" data-parent="#mysite">
+                            <p class="text-small mt-2 mb-2"><span>Languages</span> <span class="text-info">Frameworks</span>
+                                <span class="text-success">Libraries</span></p>
+                            <ul class="list-group border-bottom">
+                                <div class="">
+                                    <li class="list-item">HTML</li>
+                                    <li class="list-item">CSS (Sass)</li>
+                                    <li class="list-item">JavaScript</li>
+                                </div>
+                                <div class="text-info">
+                                    <li class="list-item">Bootstrap</li>
+                                </div>
+                                <div class="text-success">
+                                    <li class="list-item">jQuery</li>
+                                    <li class="list-item">Scrollreveal</li>
+                                </div>
                             </ul>
-                            <p>This app is running on my raspberry PI <a href="http://88.113.135.116:3000/" target="_blank">Kaste</a></p>
+                            <h4 class="mt-2">info</h4>
+                            <p class="text-left">I'm very new to designing. Before starting out with this site I decided to look for
+                                other
+                                portfolio sites for references. I really liked the simplicity and lively flow of
+                                Matthew
+                                Williams on his
+                                <a href="http://findmatthew.com/" target="_blank">site</a>. If you
+                                take a visit to the site, you can see just how much I aimed to recreate. This is my
+                                first project with Bootstrap and Sass.</p>
                         </div>
+                        <div class="card-footer card-bg"></div>
+                    </div>
                 </div>
-            </div>
+
+                <!-- Kaste card -->
+                <div class="col-lg-6 col-sm-12">
+                    <div class="card m-auto bg-light" id="kaste">
+                        <div class="card-footer card-bg card-img-top"></div>
+                        <div class="bg-secondary">
+                            <div class="img-fluid img-kaste" style="height: 200px; width: auto;" alt="Pic of kaste"></div>
+                        </div>
+                        <div class="card-body bg-transparent-teal">
+                            <h2 class="card-title">Kaste</h2>
+                            <p class="card-text">Plant watering system with MERN-stack</p>
+                            <div class="btn-group">
+                                <button data-toggle="collapse" data-target="#card-kaste" class="btn btn-primary">Show
+                                    me
+                                    more!</button>
+                                <a href="https://github.com/stutommi/my-site" target="_blank" class="btn btn-secondary text-white">Github
+                                    <i class="fab fa-github fa-lg "></i></a>
+                                <a href="https://github.com/stutommi/my-site" target="_blank" class="btn btn-success text-white">Visit
+                                    site!</a>
+                            </div>
+                        </div>
+                        <div id="card-kaste" class="collapse border" aria-labelledby="headingTwo" data-parent="#kaste">
+                            <p class="text-small mt-2 mb-2"><span>Techs</span>
+                                <span class="text-success">Libraries</span></p>
+                            <ul class="list-group border-bottom">
+                                <div>
+                                    <ul class="list-group">
+                                        <li class="list-item">MongoDB</li>
+                                        <li class="list-item">Express</li>
+                                        <li class="list-item">React</li>
+                                        <li class="list-item">Node</li>
+                                </div>
+                                <div class="text-success">
+                                    <li class="list-item">React-spring</li>
+                                    <li class="list-item">React-chartjs-2</li>
+                                </div>
+                            </ul>
+                            <h4 class="mt-2">info</h4>
+                            <p class="text-left">This app is running on my raspberry PI and is an collaboration between
+                                me and my
+                                brother. My brother is in charge of sensors and labview programs, which serve the
+                                values online. My app then fetches those values, display them and store them in a
+                                database. Right now it is giving it's user information
+                                about current humidity and temperature of different rooms and plants. It also gives
+                                information about the history of these values in chart forms. Our goal is to get the
+                                app water the plants based on the humidity values given by the sensor. <br> This is an ongoing project, and the site with the code given is constantly changing!</p>
+
+                        </div>
+                        <div class="card-footer card-bg"></div>
+                    </div>
+                </div>
         </section>
 
         <!-- Contact -->

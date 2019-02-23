@@ -13,6 +13,9 @@
 .bg-header-web {
   background-color: rgba(13, 13, 13, 0.7); }
 
+.bg-transparent-teal {
+  background-color: rgba(55, 244, 251, 0.2); }
+
 html, body {
   margin: 0;
   min-height: 100vh;
@@ -22,6 +25,9 @@ html, body {
 
 body {
   position: relative; }
+
+.card-bg {
+  background-color: #04c1c8; }
 
 img {
   background-attachment: fixed; }
@@ -180,6 +186,20 @@ canvas {
 .parallax-section-3 {
   background-image: url("../media/web_developing.jpg"); }
 
+.img-tommi {
+  background-image: url("../media/Tommi.jpg");
+  min-height: 100%;
+  background-size: cover;
+  background-position: 50% 15%;
+  background-repeat: no-repeat; }
+
+.img-kaste {
+  background-image: url("../media/kaste.png");
+  min-height: 100%;
+  background-size: 102%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat; }
+
 .shadowy {
   -webkit-box-shadow: inset 1px -1px 46px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: inset 1px -1px 46px 0px rgba(0, 0, 0, 0.75);
@@ -231,9 +251,6 @@ canvas {
   position: absolute;
   top: 10px;
   left: 10px; }
-
-#preload {
-  display: none; }
 
 .playbutton {
   border: 5px;
