@@ -6,6 +6,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="favicon.ico" />
+    <meta charset="UTF-8">
     <!-- CSS -->
     <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/bootstrap.css">
@@ -30,21 +31,21 @@
             <code>audio</code> element.
         </audio>
 
-        <div id="play-button" class="slide-right delay-3 d-inline-flex align-items-center">
+        <div id="play-button" class="slide-right delay-3 d-inline-flex align-items-center hidden">
             <div class="playbutton"></div>
             <p class="mb-0 ml-2 slide-right delay-4">
                 <span class="material-icons align-middle">chevron_left </span>My music</p>
         </div>
         <div class='row justify-content-center align-items-center m-0 w-100 h-100 align-content-center'>
             <div class="col-sm-12 m-0 justify-content-center text-center home-wrapper mb-4 h-70">
-                <h1 id='hs1' class='mb-4 slide-up delay-1'>Hi, I'm <span class="text-info">Tommi Tampio</span>.</h1>
-                <p id='hs2' class='lead slide-up delay-3'>I work as a musician and a guitar teacher...</p>
-                <p id='hs3' class="lead slide-up delay-5">...I've also started to develop my skills as an
+                <h1 id='hs1' class='mb-4 slide-up delay-1 hidden'>Hi, I'm <span class="text-info">Tommi Tampio</span>.</h1>
+                <p id='hs2' class='lead slide-up delay-3 hidden'>I work as a musician and a guitar teacher...</p>
+                <p id='hs3' class="lead slide-up delay-5 hidden">...I've also started to develop my skills as an
                     aspiring<br> </p>
-                <p class='lead delay-7'><kbd id="code-text">web developer</kbd><kbd id="cursor">_</kbd></p>
+                <p class='lead delay-7 hidden'><kbd id="code-text">web developer</kbd><kbd id="cursor">_</kbd></p>
 
             </div>
-            <div class="delay-9 col-sm-12 align-items-start justify-content-center text-center h-30">
+            <div class="delay-7 hidden col-sm-12 align-items-start justify-content-center text-center h-30">
                 <div id="hs5" class=""><a class="btn btn-primary pr-1" href="#home" role="button" id='home-button'>Read
                         more<i class="align-middle material-icons" id='home-arrow'>chevron_right</i></a></div>
             </div>
@@ -279,6 +280,8 @@
                         since. I finished my latest studies when
                         I graduated from Metropolia (UAS) in 2018.</p>
                     <p>Currently I'm gigging and teaching mainly in and around Helsinki area.</p>
+                    <p class="lead my-5 text-center">Need music for an event?<a href="#contact" class="btn btn-primary text-light ml-2">Contact me!</a></p>
+                    <p>Whether it's modern party music or smooth background music, we can make it happen!</p>
                 </div>
             </div>
 
@@ -332,7 +335,7 @@
 
         <!-- Guitar Lessons -->
         <section>
-            <div class="row justify-content-center" id="guitar-lessons">
+            <div class="row justify-content-center border-top" id="guitar-lessons">
                 <div class="col-auto">
                     <h1 class="font-weight-bold a-pad text-center text-dark slide-left">Guitar
                         Lessons</h1>
@@ -341,6 +344,69 @@
             <div class="row justify-content-center">
                 <div class="col-auto">
                     <div class="header-bar text-center bg-dark slide-left delay-m-05"></div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-md-5 text-left">
+                    <p class="lead">As a professionally educated Guitar teacher, I'm happy to offer lessons to anyone
+                        who's interested in learning this great instrument!</p>
+
+                    <h4 class="mt-4">Where?</h4>
+                    <p>For private lessons, I'll give lessons in students homes (or other place that feels suitable) on
+                        condition that it's around Helsinki area. For reference, it's fine for me to travel from
+                        Munkkiniemi to Katajanokka.</p>
+
+                    <p> I also teach at <a href="https://tauko.com/" target="_blank">Rytmimusiikkiopisto Tauko</a> in Espoo. It's a
+                        great place to study music in small geoups and I warmly recommend it to everybody!</p>
+
+                    <h4 class="mt-4">What age?</h4>
+                    <p>I've taught music and specially guitar playing around 8 years now. That includes people aged
+                        from 6 to over 50. I'm also open to teaching people with disabilites (e.g Down syndrome /
+                        Autism).</p>
+
+                    <h4 class="mt-4">No prior experience?</h4>
+                    <p>No problem! I love teaching people who have just started on their guitar journey just as much as
+                        those who's been doodling with them for some time!</p>
+
+                    <h4 class="mt-4">Not sure?</h4>
+                    <p>If you're are not sure whether guitar playing lessons are for you (or someone you know), no
+                        problem: We can have one or two test lessons and if you feel the lessons are not for you, I don't
+                        charge anything for them!</p>
+
+
+                    <h4 class="mt-4 text-center">Pricing</h4>
+                    <table class="table mt-4">
+                        <thead>
+                            <tr>
+                                <th scope="col">Type</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Duration</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Private</td>
+                                <td>40 €</td>
+                                <td>45 min</td>
+                            </tr>
+                            <tr>
+                                <td>Private</td>
+                                <td>50 €</td>
+                                <td>60 min</td>
+                            </tr>
+                            <tr>
+                                <td>Duo</td>
+                                <td>30 € / person</td>
+                                <td>45 min</td>
+                            </tr>
+                            <tr>
+                                <td>Group (max 4)</td>
+                                <td>30 € / person</td>
+                                <td>45 min</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="lead my-5 text-center"><a href="#contact">Contact me</a> for lessons if you're interested!</p>
                 </div>
             </div>
         </section>
@@ -362,7 +428,7 @@
                     <p class="small mt-4 mb-4 text-center"><kbd>(let experience = 0; experience < lifetime;
                                 experience++)</kbd> </p> <p>It
                                 started at my friends place on fall 2018. We had no idea what coding was about and I
-                                started googling what does it actually mean. My friend found codecademy and we played
+                                started googling about it's actual meaning. My friend found codecademy and we played
                                 with it for a while.</p>
 
                     <p>After that I decided that I would try to learn some basics of it to see if I
@@ -410,7 +476,7 @@
                     <p>This is subjective estimate of my skills in languages/frameworks combined with my time spent
                         learning and using them.</p>
                 </div>
-                <div class="col-12 pl-2 pr-2 col-md-6 bg-light d-flex flex-column text-left justify-content-around text-small text-light pr-0 pl-0">
+                <div class="col-12 pl-2 pr-2 col-md-6 bg-light d-flex flex-column text-left justify-content-around text-small text-light">
                     <div class="w-100 bg-gray rounded-right d-inline-flex mb-4">
                         <div class=" chart-tag w-25 text-center bg-teal">HTML</div>
                         <span class="text-small chart-number text-secondary">60%</span>
@@ -499,7 +565,7 @@
 
             <!-- My-site card-->
             <div class="row justify-content-center">
-                <div class="col-lg-6 col-sm-12 mb-4">
+                <div class="col-lg-6 col-sm-12 mb-4 slide-left">
                     <div class="card m-auto bg-light" id="mysite">
                         <div class="card-footer card-bg card-img-top"></div>
                         <div class="img-fluid img-tommi" style="height: 200px; width: auto;" alt="Pic of Tommi"></div>
@@ -514,7 +580,7 @@
                                     <i class="fab fa-github fa-lg "></i></a>
                             </div>
                         </div>
-                        <div id="card-mysite" class="collapse border" aria-labelledby="headingOne" data-parent="#mysite">
+                        <div id="card-mysite" class="collapse border px-2" aria-labelledby="headingOne" data-parent="#mysite">
                             <p class="text-small mt-2 mb-2"><span>Languages</span> <span class="text-info">Frameworks</span>
                                 <span class="text-success">Libraries</span></p>
                             <ul class="list-group border-bottom">
@@ -532,13 +598,14 @@
                                 </div>
                             </ul>
                             <h4 class="mt-2">info</h4>
-                            <p class="text-left">I'm very new to designing. Before starting out with this site I decided to look for
+                            <p class="text-left">I'm very new to designing. Before starting out with this site I
+                                decided to look for
                                 other
                                 portfolio sites for references. I really liked the simplicity and lively flow of
                                 Matthew
                                 Williams on his
                                 <a href="http://findmatthew.com/" target="_blank">site</a>. If you
-                                take a visit to the site, you can see just how much I aimed to recreate. This is my
+                                take a visit to the site, you can see just how much I aimed to recreate it. This is my
                                 first project with Bootstrap and Sass.</p>
                         </div>
                         <div class="card-footer card-bg"></div>
@@ -547,7 +614,7 @@
 
                 <!-- Kaste card -->
                 <div class="col-lg-6 col-sm-12">
-                    <div class="card m-auto bg-light" id="kaste">
+                    <div class="card m-auto bg-light slide-right" id="kaste">
                         <div class="card-footer card-bg card-img-top"></div>
                         <div class="bg-secondary">
                             <div class="img-fluid img-kaste" style="height: 200px; width: auto;" alt="Pic of kaste"></div>
@@ -559,13 +626,13 @@
                                 <button data-toggle="collapse" data-target="#card-kaste" class="btn btn-primary">Show
                                     me
                                     more!</button>
-                                <a href="https://github.com/stutommi/my-site" target="_blank" class="btn btn-secondary text-white">Github
+                                <a href="https://github.com/stutommi/kaste" target="_blank" class="btn btn-secondary text-white">Github
                                     <i class="fab fa-github fa-lg "></i></a>
-                                <a href="https://github.com/stutommi/my-site" target="_blank" class="btn btn-success text-white">Visit
+                                <a href="http://88.113.135.116:3000/" target="_blank" class="btn btn-success text-white">Visit
                                     site!</a>
                             </div>
                         </div>
-                        <div id="card-kaste" class="collapse border" aria-labelledby="headingTwo" data-parent="#kaste">
+                        <div id="card-kaste" class="collapse border px-2" aria-labelledby="headingTwo" data-parent="#kaste">
                             <p class="text-small mt-2 mb-2"><span>Techs</span>
                                 <span class="text-success">Libraries</span></p>
                             <ul class="list-group border-bottom">
@@ -589,7 +656,9 @@
                                 database. Right now it is giving it's user information
                                 about current humidity and temperature of different rooms and plants. It also gives
                                 information about the history of these values in chart forms. Our goal is to get the
-                                app water the plants based on the humidity values given by the sensor. <br> This is an ongoing project, and the site with the code given is constantly changing!</p>
+                                app water the plants based on the humidity values given by the sensor.</p>
+                            <p class="text-left">This is an ongoing project, and the site with the code given is
+                                constantly changing!</p>
 
                         </div>
                         <div class="card-footer card-bg"></div>
@@ -607,6 +676,93 @@
             <div class="row justify-content-center">
                 <div class="col-auto">
                     <div class="header-bar text-center bg-dark slide-left delay-m-05"></div>
+                </div>
+            </div>
+
+            <!-- Form -->
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-md-8">
+                    <p class="lead">Don't hesitate to contact if you have any questions or needs! You can use to form
+                        below or contact through <a href="https://www.facebook.com/tommi.tampio">facebook</a>!</p>
+                </div>
+            </div>
+            <form action="https://formspree.io/tommi.teetee@hotmail.com" method="POST" id="contact-form">
+                <div class="col-sm-10 col-md-5 mx-auto bg-gradient-info rounded py-2">
+                    <fieldset class="form-group text-light">
+                        <div class="row">
+                            <legend class="col-form-label text-left mx-auto col-sm-12">Looking for</legend>
+                        </div>
+                        <div class="row">
+                            <div class="text-left mx-auto col-sm-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="subject" id="gridRadios1" value="guitar lessons">
+                                    <label class="form-check-label" for="gridRadios1">
+                                        Guitar Lessons
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="subject" id="gridRadios2" value="Music for event">
+                                    <label class="form-check-label" for="gridRadios2">
+                                        Music for event
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="subject" id="gridRadios3" value="New website">
+                                    <label class="form-check-label" for="gridRadios3">
+                                        New website
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="subject" id="gridRadios4" value="Updating existing website">
+                                    <label class="form-check-label" for="gridRadios4">
+                                        Updating existing website
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="subject" id="gridRadios5" value="Other">
+                                    <label class="form-check-label" for="gridRadios5">
+                                        Other
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="form-group row">
+                        <div class="col-sm-12 mx-auto">
+                            <input type="text" class="form-control" name="name" id="name" placeholder="Enter name"
+                                required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-12 mx-auto">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Enter email"
+                                required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-12 mx-auto">
+                            <textarea class="form-control" id="message" name='message' rows="3" placeholder="Your message"
+                                required></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-12 mx-auto">
+                            <button type="submit" id="submit" class="btn btn-primary">Send</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+        <!-- Footer -->
+        <section>
+            <div class="row text-secondary mt-4">
+                <div class="col-12 px-0">
+                    <footer class="page-footer font-small bg-dark">
+
+                        <div class="text-center py-3">© 2019 Copyright:
+                            <span class="text-info">Tommi Tampio</span>
+                        </div>
+                    </footer>
                 </div>
             </div>
         </section>

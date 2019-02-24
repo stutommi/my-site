@@ -72,8 +72,6 @@ $('a[href*="#"]')
     $(sibDiv).removeClass('show');
   });
 
-
-
 (function (document) {
   var button = document.getElementById('home-button');
   var arrow = document.getElementById('home-arrow');

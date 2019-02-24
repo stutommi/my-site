@@ -201,6 +201,10 @@ html.sr .load-hidden {
   height: 100vh;
 }
 
+.hidden {
+  visibility: hidden;
+}
+
 .full-page-3 {
   height: 300vh;
 }
@@ -226,7 +230,7 @@ canvas {
 // PARALLAX
 .parallax {
   min-height: 100%;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-size: 102%;
   background-position: center center;
   background-repeat: no-repeat;
@@ -258,10 +262,14 @@ canvas {
   background-repeat: no-repeat;
 }
 
-.shadowy {
-  -webkit-box-shadow: inset 1px -1px 46px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: inset 1px -1px 46px 0px rgba(0,0,0,0.75);
-  box-shadow: inset 1px -1px 46px 0px rgba(0,0,0,0.75);
+// .shadowy {
+//   -webkit-box-shadow: inset 1px -1px 46px 0px rgba(0,0,0,0.75);
+//   -moz-box-shadow: inset 1px -1px 46px 0px rgba(0,0,0,0.75);
+//   box-shadow: inset 1px -1px 46px 0px rgba(0,0,0,0.75);
+// }
+
+.hidden {
+  visibility: hidden;
 }
 
 #home-info {

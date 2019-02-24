@@ -4,11 +4,6 @@ var canvas = document.querySelector('canvas');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
-console.log(window.screen.height + ' window screen height');
-console.log(canvas.height + ' height start');
-console.log(canvas.width + ' width start');
-console.log(document.documentElement.clientHeight + 'Client height');
-console.log($('body'));
 
 var c = canvas.getContext('2d');
 
@@ -78,7 +73,6 @@ var colorArray = [
     `rgba(${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 10) / 10}`
 
 ];
-console.log(colorArray);
 window.addEventListener('mousemove', function (event) {
     mouse.x = event.x;
     mouse.y = event.y;
@@ -87,8 +81,6 @@ window.addEventListener('mousemove', function (event) {
 window.addEventListener('resize', function () {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
-    console.log(canvas.height + ' changed');
-    
     init();
 })
 
