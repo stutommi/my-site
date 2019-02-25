@@ -7,46 +7,6 @@ canvas.height = window.innerHeight;
 
 var c = canvas.getContext('2d');
 
-
-// c.fillStyle = 'rgba(255,0,0,0.5';
-// c.fillRect(100, 100, 100, 100);
-// c.fillStyle = 'rgba(0,255,0,0.5';
-// c.fillRect(400, 400, 200, 100);
-// c.fillStyle = 'rgba(0,0,255,0.5';
-// c.fillRect(700, 500, 300, 100);
-
-// Line
-// c.beginPath();
-// c.moveTo(50, 300);
-// c.lineTo(300, 100);
-// c.lineTo(400, 300);
-// c.strokeStyle = 'green';
-// c.stroke();
-
-// c.beginPath();
-// c.moveTo(400, 300)
-// c.lineTo(600, 300);
-// c.strokeStyle = 'blue';
-// c.stroke();
-
-// Arc / Circle
-
-// x: Int, y: Int, r: Int, startAngle: Float, endAngle: Float
-// c.beginPath();
-// c.arc(300, 300, 30, 0, Math.PI * 2, false);
-// c.strokeStyle = 'blue';
-// c.stroke();
-
-// for (var i = 0; i < 2400; i++) {
-//     var x = Math.random() * window.innerWidth;
-//     var y = Math.random() * window.innerHeight;
-//     var randomColor = `rgba(${Math.random() * 255},${Math.random() * 255},${Math.random() * 255}, ${Math.random()})`;
-//     c.beginPath();
-//     c.arc(x, y, 30, 0, Math.PI * 2, false);
-//     c.strokeStyle = `${randomColor}`;
-//     c.stroke();
-// }
-
 // Tracks mouse movement on screen
 var mouse = {
     x: undefined,
@@ -58,8 +18,8 @@ var minRadius = 2;
 var color = `rgba(${Math.random() * 255},${Math.random() * 255},${Math.random() * 255}, ${Math.random()})`;
 
 var helper = function() {
-    if (canvas.width < 700) {return 100}
-    else {return 200}
+    if (canvas.width < 700) {return 5}
+    else {return 10}
 };
 
 
@@ -133,7 +93,7 @@ function init() {
     var numOfCircles = helper();
     // Creates the circles and pushes them into circleArray
     for (let i = 0; i < numOfCircles; i++) {
-        var radius = Math.random() * 3 + 1;
+        var radius = Math.random() * 20 + 1;
         var x = Math.random() * (innerWidth - radius * 2) + radius;
         var y = Math.random() * (innerHeight - radius * 2) + radius;
         var dx = (Math.random() - 0.5);

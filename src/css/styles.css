@@ -151,6 +151,9 @@ html.sr .load-hidden {
 .full-page {
   height: 100vh; }
 
+.min-full-page {
+  min-height: 100vh; }
+
 .hidden {
   visibility: hidden; }
 
@@ -160,12 +163,12 @@ html.sr .load-hidden {
 canvas {
   top: 0;
   left: 0;
-  opacity: 0;
   width: 100%;
   height: 100vh;
-  position: absolute;
-  animation: canvas 2s linear 7s 1;
-  animation-fill-mode: forwards; }
+  position: absolute; }
+
+.section-projects {
+  overflow-x: hidden; }
 
 .active {
   color: #17a2b8 !important; }
@@ -213,11 +216,15 @@ canvas {
 #home-button {
   border: 1px solid transparent; }
 
-.home-arrow-right {
+#home-button:hover > #home-arrow {
+  transform: rotate(90deg);
+  transition: transform 0.2s linear; }
+
+#home-arrow {
   transform: rotate(0deg);
   transition: transform 0.2s linear; }
 
-.home-arrow-down {
+.home-arrow-right:hover {
   transform: rotate(90deg);
   transition: transform 0.2s linear; }
 
