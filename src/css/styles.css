@@ -105,7 +105,7 @@ a:hover {
     height: 0;
     border-left: 37.5px solid transparent;
     border-right: 37.5px solid transparent;
-    border-top: 18.77px solid #45c804; }
+    border-top: 18.75px solid #45c804; }
 
 .hexagon-teal {
   margin: 30px 0 15px 0;
@@ -132,7 +132,7 @@ a:hover {
     height: 0;
     border-left: 37.5px solid transparent;
     border-right: 37.5px solid transparent;
-    border-top: 18.77px solid #04c1c8; }
+    border-top: 18.75px solid #04c1c8; }
 
 html.sr .load-hidden {
   visibility: hidden; }

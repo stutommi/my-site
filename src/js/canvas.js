@@ -1,5 +1,6 @@
 
 var canvas = document.querySelector('canvas');
+var container = document.getElementById('container')
 
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
@@ -18,8 +19,8 @@ var minRadius = 2;
 var color = `rgba(${Math.random() * 255},${Math.random() * 255},${Math.random() * 255}, ${Math.random()})`;
 
 var helper = function() {
-    if (canvas.width < 700) {return 5}
-    else {return 10}
+    if (canvas.width < 700) {return 30}
+    else {return 60}
 };
 
 
@@ -33,9 +34,9 @@ var colorArray = [
     `rgba(${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 10) / 10}`
 
 ];
-window.addEventListener('mousemove', function (event) {
-    mouse.x = event.x;
-    mouse.y = event.y;
+container.addEventListener('mousemove', function (event) {
+    mouse.x = event.pageX;
+    mouse.y = event.pageY;
 })
 
 window.addEventListener('resize', function () {
@@ -93,7 +94,7 @@ function init() {
     var numOfCircles = helper();
     // Creates the circles and pushes them into circleArray
     for (let i = 0; i < numOfCircles; i++) {
-        var radius = Math.random() * 20 + 1;
+        var radius = Math.floor(Math.random() * 3) + 1;
         var x = Math.random() * (innerWidth - radius * 2) + radius;
         var y = Math.random() * (innerHeight - radius * 2) + radius;
         var dx = (Math.random() - 0.5);

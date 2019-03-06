@@ -15,17 +15,18 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800">
     <!-- Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <!-- Scrollreveal.js -->
     <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 
 <body>
-    <canvas></canvas>
-    <!-- Home -->
+
+    <!-- Hero -->
     <div class='container-fluid p-0 full-page height-fix' id='container'>
 
+        <canvas class="delay-7 hidden"></canvas>
         <audio id="bgMusic" src="./media/lattari_mix3.mp3">
             Your browser does not support the
             <code>audio</code> element.
@@ -112,18 +113,17 @@
             </div>
             <div class="row justify-content-center mb-lg-4">
                 <div class="col-auto reveal">
-                    <p class="lead text-center text-dark">This site is a split in two:<br> <a href="#music" class="text-success">Music</a>
-                        and <a href="#web" class="text-info">Web development</a>.</p>
-                    <p class="border-top pt-2">You can navigate straight to either depending on your interests!</p>
-                    <p class="d-lg-none mt-4">Touch the buttons for some quick facts!</p>
+                    <p class="lead text-center text-dark">This site is a split in two of my main skills:<br> <a
+                            href="#music" class="text-success">Music</a>
+                        and <a href="#web" class="text-info">Webdev</a>.</p>
                 </div>
             </div>
             <div class="row justify-content-center d-md-none">
                 <div class="col-sm-6 justify-content-around d-flex mb-4">
-                    <button class="fact-button btn btn-success" type="button" data-toggle="collapse" data-target="#music-facts"
-                        aria-expanded="false" aria-controls="music-facts">Music</button>
-                    <button class="fact-button btn btn-info" type="button" data-toggle="collapse" data-target="#web-facts"
-                        aria-expanded="false" aria-controls="web-facts">WebDev</button>
+                    <button class="fact-button btn btn-success" type="button" data-toggle="collapse"
+                        data-target="#music-facts" aria-expanded="false" aria-controls="music-facts">Music</button>
+                    <button class="fact-button btn btn-info" type="button" data-toggle="collapse"
+                        data-target="#web-facts" aria-expanded="false" aria-controls="web-facts">WebDev</button>
                 </div>
             </div>
             <!-- Facts section -->
@@ -132,7 +132,8 @@
                 <div class="col-sm-12 col-md-6 div-collapse collapse border-right" id="music-facts">
                     <div class="row">
                         <div class="col-6 sequenced-m-1">
-                            <div class="card bg-light text-white text-center align-items-center border-0 justify-content-center">
+                            <div
+                                class="card bg-light text-white text-center align-items-center border-0 justify-content-center">
                                 <div class="rotate sequenced-m-1">
                                     <div class="hexagon-green">
                                         <div class="fas fa-brain align-middle mt-2 h3"></div>
@@ -140,13 +141,14 @@
                                 </div>
                                 <div class="card-body pl-0 pr-0">
                                     <h5 class="card-title text-muted font-weight-bold">Teaching</h5>
-                                    <p class="card-text text-muted text-small">I give guitar lessons. <a class="text-underline"
-                                            href="#guitar-lessons">interested?</a></p>
+                                    <p class="card-text text-muted text-small">I give guitar lessons. <a
+                                            class="text-underline" href="#guitar-lessons">interested?</a></p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-6 sequenced-m-1">
-                            <div class="card bg-light text-white text-center align-items-center border-0 justify-content-center">
+                            <div
+                                class="card bg-light text-white text-center align-items-center border-0 justify-content-center">
                                 <div class="rotate sequenced-m-1">
                                     <div class="hexagon-green">
                                         <div class="fas fa-guitar align-middle mt-2 h3"></div>
@@ -162,7 +164,8 @@
                     </div>
                     <div class="row">
                         <div class="col-6 sequenced-m-2">
-                            <div class="card bg-light text-white text-center align-items-center border-0 justify-content-center">
+                            <div
+                                class="card bg-light text-white text-center align-items-center border-0 justify-content-center">
                                 <div class="rotate sequenced-m-2">
                                     <div class="hexagon-green">
                                         <div class="fas fa-pencil-alt align-middle mt-2 h3"></div>
@@ -176,7 +179,8 @@
                             </div>
                         </div>
                         <div class="col-6 sequenced-m-2">
-                            <div class="card bg-light text-white text-center align-items-center border-0 justify-content-center">
+                            <div
+                                class="card bg-light text-white text-center align-items-center border-0 justify-content-center">
                                 <div class="rotate sequenced-m-2">
                                     <div class="hexagon-green">
                                         <div class="far fa-lightbulb align-middle mt-2 h3"></div>
@@ -195,7 +199,8 @@
                 <div class="col-sm-12 col-md-6 div-collapse collapse" id="web-facts">
                     <div class="row">
                         <div class="col-6 sequenced-m-1">
-                            <div class="card bg-light text-white text-center align-items-center border-0 justify-content-center">
+                            <div
+                                class="card bg-light text-white text-center align-items-center border-0 justify-content-center">
                                 <div class="sequenced-m-1 rotate">
                                     <div class="hexagon-teal">
                                         <div class="fas fa-laptop-code align-middle mt-2 h3"></div>
@@ -209,9 +214,12 @@
                             </div>
                         </div>
                         <div class="col-6 sequenced-m-1">
-                            <div class="card bg-light text-white text-center align-items-center border-0 justify-content-center">
-                                <div class="hexagon-teal">
-                                    <div class="far fa-handshake align-middle mt-2 h3"></div>
+                            <div
+                                class="card bg-light text-white text-center align-items-center border-0 justify-content-center">
+                                <div class="sequenced-m-1 rotate">
+                                    <div class="hexagon-teal">
+                                        <div class="far fa-handshake align-middle mt-2 h3"></div>
+                                    </div>
                                 </div>
                                 <div class="card-body pl-0 pr-0">
                                     <h5 class="card-title text-muted font-weight-bold">Looking for</h5>
@@ -223,10 +231,12 @@
                     </div>
                     <div class="row">
                         <div class="col-6 sequenced-m-2">
-                            <div class="card bg-light text-white text-center align-items-center border-0 justify-content-center">
+                            <div
+                                class="card bg-light text-white text-center align-items-center border-0 justify-content-center">
                                 <div class="sequenced-m-2 rotate">
                                     <div class="hexagon-teal">
-                                        <div class="material-icons align-middle mt-2 h2" style="font-size: 30px">flip_to_front</div>
+                                        <div class="material-icons align-middle mt-2 h2" style="font-size: 30px">
+                                            flip_to_front</div>
                                     </div>
                                 </div>
                                 <div class="card-body pl-0 pr-0">
@@ -237,10 +247,12 @@
                             </div>
                         </div>
                         <div class="col-6 sequenced-m-2">
-                            <div class="card bg-light text-white text-center align-items-center border-0 justify-content-center">
+                            <div
+                                class="card bg-light text-white text-center align-items-center border-0 justify-content-center">
                                 <div class="sequenced-m-2 rotate">
                                     <div class="hexagon-teal">
-                                        <div class="material-icons align-middle mt-2 h2" style="font-size: 30px">flip_to_back</div>
+                                        <div class="material-icons align-middle mt-2 h2" style="font-size: 30px">
+                                            flip_to_back</div>
                                     </div>
                                 </div>
                                 <div class="card-body pl-0 pr-0">
@@ -272,12 +284,14 @@
             <div class="row justify-content-center min-half-page align-content-center border-bottom">
                 <div class="col-md-6 mt-4 reveal">
                     <h2>Short Bio</h2>
-                    <p>I grew up most of my childhood in Kainuu. I started getting interested about guitar playing
-                        seriously when I was around 13 years old. I've played and studied music. I finished my latest
+                    <p>Growing up in Kainuu I started getting interested about guitar playing
+                        seriously when I was around 13 years old. I've played and studied music ever since. I finished
+                        my latest
                         studies when
                         I graduated from Metropolia (UAS) in 2018.</p>
                     <p>Currently I'm gigging and teaching mainly in and around Helsinki area.</p>
-                    <p class="lead my-5 text-center">Need music for an event?<a href="#contact" class="btn btn-primary text-light ml-2">Contact
+                    <p class="lead my-5 text-center">Need music for an event?<a href="#contact"
+                            class="btn btn-primary text-light ml-2">Contact
                             me!</a></p>
                     <p>Whether it's modern party music or smooth background music, we can make it happen!</p>
                 </div>
@@ -285,11 +299,11 @@
 
             <div class="row justify-content-center min-half-page align-content-center">
                 <div class="col-md-6 mt-4 reveal">
-                    <h2>What's Second Wind Quintet?</h2>
+                    <h2>Second Wind Quintet</h2>
                     <p class="lead mt-5">Second Wind Quintet is a jazz/folk-oriented group which performs original
                         instrumental music
                         every now and
-                        then around Finland. Music is composed by Tommi Tampio</p>
+                        then around Finland. Music is composed by Tommi Tampio.</p>
                 </div>
             </div>
             <div class="row parallax parallax-section-2 bg-custom shadowy align-items-center half-page" id="music">
@@ -325,8 +339,9 @@
                         </tbody>
                     </table>
                     <p>We have a debut album in the making. Stay tuned!</p>
-                    <p class="small">While waiting, you can listen to some of our earlier recordings from <a target="_blank"
-                            href="https://www.youtube.com/watch?v=ucqWphpPF5Q">Youtube</a> or <a target="_blank" href="https://soundcloud.com/second-wind-quintet">Soundcloud</a>!</p>
+                    <p class="small">While waiting, you can listen to some of our earlier recordings from <a
+                            target="_blank" href="https://www.youtube.com/watch?v=ucqWphpPF5Q">Youtube</a> or <a
+                            target="_blank" href="https://soundcloud.com/second-wind-quintet">Soundcloud</a>!</p>
                 </div>
             </div>
         </section>
@@ -425,7 +440,8 @@
             </div>
             <div class="row justify-content-center min-half-page align-content-center">
                 <div class="col-md-6 pt-5 text-left">
-                    <h2 class="text-center"><span>Short</span> <span>Hi</span><span class="text-info sequenced-5">story</span></h2>
+                    <h2 class="text-center"><span>Short</span> <span>Hi</span><span
+                            class="text-info sequenced-5">story</span></h2>
                     <p class="small mt-4 mb-4 text-center"><kbd>(let experience = 0; experience < lifetime;
                                 experience++)</kbd> </p> <p>It
                                 started at my friends place on fall 2018. We had no idea what coding was about and I
@@ -479,7 +495,8 @@
                     <p>This is subjective estimate of my skills in languages/frameworks combined with my time spent
                         learning and using them.</p>
                 </div>
-                <div class="col-12 pl-2 pr-2 col-md-6 bg-light d-flex flex-column text-left justify-content-around text-small text-light">
+                <div
+                    class="col-12 pl-2 pr-2 col-md-6 bg-light d-flex flex-column text-left justify-content-around text-small text-light">
                     <div class="w-100 bg-gray rounded-right d-inline-flex mb-4">
                         <div class=" chart-tag w-25 text-center bg-teal">HTML</div>
                         <span class="text-small chart-number text-secondary">60%</span>
@@ -539,12 +556,15 @@
                     <div>
                         <p class="lead">Content I'm striving to produce</p>
                         <ul class="list-group align-items-center">
-                            <li class="list-item rounded w-25 bg-teal text-white border-bottom border-secondary">Dynamic</li>
-                            <li class="list-item p-1 rounded w-50 bg-teal text-white border-bottom border-secondary">Fast
+                            <li class="list-item rounded w-25 bg-teal text-white border-bottom border-secondary">Dynamic
+                            </li>
+                            <li class="list-item p-1 rounded w-50 bg-teal text-white border-bottom border-secondary">
+                                Fast
                                 load</li>
                             <li class="list-item p-2 rounded w-75 bg-teal text-white border-bottom border-secondary">Lag
                                 free</li>
-                            <li class="list-item p-3 rounded w-100 bg-teal text-white border-bottom border-secondary">Responsive</li>
+                            <li class="list-item p-3 rounded w-100 bg-teal text-white border-bottom border-secondary">
+                                Responsive</li>
                         </ul>
                     </div>
 
@@ -579,12 +599,15 @@
                                 <button data-toggle="collapse" data-target="#card-mysite" class="btn btn-primary">Show
                                     me
                                     more!</button>
-                                <a href="https://github.com/stutommi/my-site" target="_blank" class="btn btn-secondary text-white">Github
+                                <a href="https://github.com/stutommi/my-site" target="_blank"
+                                    class="btn btn-secondary text-white">Github
                                     <i class="fab fa-github fa-lg "></i></a>
                             </div>
                         </div>
-                        <div id="card-mysite" class="collapse border px-2" aria-labelledby="headingOne" data-parent="#mysite">
-                            <p class="text-small mt-2 mb-2"><span>Languages</span> <span class="text-info">Frameworks</span>
+                        <div id="card-mysite" class="collapse border px-2" aria-labelledby="headingOne"
+                            data-parent="#mysite">
+                            <p class="text-small mt-2 mb-2"><span>Languages</span> <span
+                                    class="text-info">Frameworks</span>
                                 <span class="text-success">Libraries</span></p>
                             <ul class="list-group border-bottom">
                                 <div class="">
@@ -620,7 +643,8 @@
                     <div class="card m-auto bg-light slide-right" id="kaste">
                         <div class="card-footer card-bg card-img-top"></div>
                         <div class="bg-secondary">
-                            <div class="img-fluid img-kaste" style="height: 200px; width: auto;" alt="Pic of kaste"></div>
+                            <div class="img-fluid img-kaste" style="height: 200px; width: auto;" alt="Pic of kaste">
+                            </div>
                         </div>
                         <div class="card-body bg-transparent-teal">
                             <h2 class="card-title">Kaste</h2>
@@ -629,13 +653,16 @@
                                 <button data-toggle="collapse" data-target="#card-kaste" class="btn btn-primary">Show
                                     me
                                     more!</button>
-                                <a href="https://github.com/stutommi/kaste" target="_blank" class="btn btn-secondary text-white">Github
+                                <a href="https://github.com/stutommi/kaste" target="_blank"
+                                    class="btn btn-secondary text-white">Github
                                     <i class="fab fa-github fa-lg "></i></a>
-                                <a href="http://88.113.135.116:3000/" target="_blank" class="btn btn-success text-white">Visit
+                                <a href="http://88.113.135.116:3000/" target="_blank"
+                                    class="btn btn-success text-white">Visit
                                     site!</a>
                             </div>
                         </div>
-                        <div id="card-kaste" class="collapse border px-2" aria-labelledby="headingTwo" data-parent="#kaste">
+                        <div id="card-kaste" class="collapse border px-2" aria-labelledby="headingTwo"
+                            data-parent="#kaste">
                             <p class="text-small mt-2 mb-2"><span>Techs</span>
                                 <span class="text-success">Libraries</span></p>
                             <ul class="list-group border-bottom">
@@ -686,7 +713,8 @@
             <div class="row justify-content-center">
                 <div class="col-sm-12 col-md-8">
                     <p class="lead">Don't hesitate to contact if you have any questions or needs! You can use to form
-                        below or contact through <a href="https://www.facebook.com/tommi.tampio" target="_blank">facebook</a>!</p>
+                        below or contact through <a href="https://www.facebook.com/tommi.tampio"
+                            target="_blank">facebook</a>!</p>
                 </div>
             </div>
             <form action="https://formspree.io/tommi.teetee@hotmail.com" method="POST" id="contact-form">
@@ -698,31 +726,36 @@
                         <div class="row">
                             <div class="text-left mx-auto col-sm-12">
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="subject" id="gridRadios1" value="guitar lessons">
+                                    <input class="form-check-input" type="radio" name="subject" id="gridRadios1"
+                                        value="guitar lessons">
                                     <label class="form-check-label" for="gridRadios1">
                                         Guitar Lessons
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="subject" id="gridRadios2" value="Music for event">
+                                    <input class="form-check-input" type="radio" name="subject" id="gridRadios2"
+                                        value="Music for event">
                                     <label class="form-check-label" for="gridRadios2">
                                         Music for event
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="subject" id="gridRadios3" value="New website">
+                                    <input class="form-check-input" type="radio" name="subject" id="gridRadios3"
+                                        value="New website">
                                     <label class="form-check-label" for="gridRadios3">
                                         New website
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="subject" id="gridRadios4" value="Updating existing website">
+                                    <input class="form-check-input" type="radio" name="subject" id="gridRadios4"
+                                        value="Updating existing website">
                                     <label class="form-check-label" for="gridRadios4">
                                         Updating existing website
                                     </label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="subject" id="gridRadios5" value="Other">
+                                    <input class="form-check-input" type="radio" name="subject" id="gridRadios5"
+                                        value="Other">
                                     <label class="form-check-label" for="gridRadios5">
                                         Other
                                     </label>
@@ -744,8 +777,8 @@
                     </div>
                     <div class="form-group row">
                         <div class="col-sm-12 mx-auto">
-                            <textarea class="form-control" id="message" name='message' rows="3" placeholder="Your message"
-                                required></textarea>
+                            <textarea class="form-control" id="message" name='message' rows="3"
+                                placeholder="Your message" required></textarea>
                         </div>
                     </div>
                     <div class="form-group row">
