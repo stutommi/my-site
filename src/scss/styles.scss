@@ -15,7 +15,7 @@ $green: hsl(100, 96%, 40%);
   background-color: hsl(0,0,80)
 }
 
-.bg-header {
+.bg-header-music {
   background-color: hsla(1, 0, 0, 0.2)
 }
 
@@ -182,8 +182,11 @@ html.sr .load-hidden {
 .header-bar {
     width: 70px;
     height: 4px;
-    margin: 25px 0 40px 0;
-    // background-color: $primary;
+    margin-top: 25px;
+}
+
+.sub-header {
+  margin-bottom: 50px;
 }
 
 .half-page {
@@ -265,12 +268,6 @@ canvas {
   background-position: 50% 50%;
   background-repeat: no-repeat;
 }
-
-// .shadowy {
-//   -webkit-box-shadow: inset 1px -1px 46px 0px rgba(0,0,0,0.75);
-//   -moz-box-shadow: inset 1px -1px 46px 0px rgba(0,0,0,0.75);
-//   box-shadow: inset 1px -1px 46px 0px rgba(0,0,0,0.75);
-// }
 
 .hidden {
   visibility: hidden;

@@ -7,7 +7,7 @@
 .bg-gray {
   background-color: #cccccc; }
 
-.bg-header {
+.bg-header-music {
   background-color: rgba(0, 0, 0, 0.2); }
 
 .bg-header-web {
@@ -140,7 +140,10 @@ html.sr .load-hidden {
 .header-bar {
   width: 70px;
   height: 4px;
-  margin: 25px 0 40px 0; }
+  margin-top: 25px; }
+
+.sub-header {
+  margin-bottom: 50px; }
 
 .half-page {
   height: 50vh; }

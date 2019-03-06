@@ -26,6 +26,7 @@ var rotate = {
     rotate: {
         y: 100
     },
+    scale: 2,
     mobile: false
 }
 
