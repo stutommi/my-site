@@ -26,7 +26,6 @@ var rotate = {
     rotate: {
         y: 100
     },
-    scale: 2,
     mobile: false
 }
 
@@ -71,7 +70,7 @@ ScrollReveal().reveal('.sequenced-m-3', { interval: 200, mobile: false});
 
 // Mobile Intervals
 ScrollReveal().reveal('.sequenced-1', { interval: 100});
-ScrollReveal().reveal('.sequenced-2', { interval: 100,});
+ScrollReveal().reveal('.sequenced-2', { interval: 100});
 ScrollReveal().reveal('.sequenced-3', { interval: 200});
 ScrollReveal().reveal('.sequenced-4', { interval: 100, origin: 'left', distance: '50%', easing: 'ease-in-out', duration: 1000});
 ScrollReveal().reveal('.sequenced-5', { interval: 600, origin: 'right', distance: '100%'});
