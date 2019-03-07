@@ -1,32 +1,58 @@
 
-var slideUp = {
+const slideUp = {
     distance: '100%',
     origin: 'bottom',
     opacity: 0,
     delay: 500
 };
 
-var slideLeft = {
+const slideLeft = {
     distance: '100%',
     origin: 'left',
     opacity: 0,
     // delay: 500,
-    mobile: false
+    mobile: false,
+    easing: 'ease-in-out',
+    duration: 750
 };
 
-var slideRight = {
+const slideRight = {
     distance: '100%',
     origin: 'right',
     opacity: 0,
-    delay: 500,
-    mobile: false
+    // delay: 500,
+    mobile: false,
+    easing: 'ease-in-out',
+    duration: 750
 };
 
-var rotate = {
+const slideRight1 = {
+    distance: '50%',
+    origin: 'right',
+    opacity: 0,
+    // delay: 500,
+    mobile: false,
+    duration: 500
+};
+
+const rotate1 = {
+    duration: 500,
+    opacity: 0,
     rotate: {
         y: 100
     },
-    mobile: false
+    mobile: false,
+    interval: 100
+}
+
+const rotate2 = {
+    duration: 500,
+    opacity: 0,
+    rotate: {
+        y: 100
+    },
+    mobile: false,
+    interval: 100
 }
 
 // Reveal
@@ -36,6 +62,7 @@ ScrollReveal().reveal('.reveal');
 ScrollReveal().reveal('.slide-up', slideUp);
 ScrollReveal().reveal('.slide-left', slideLeft);
 ScrollReveal().reveal('.slide-right', slideRight);
+ScrollReveal().reveal('.slide-right-1', slideRight1);
 ScrollReveal().reveal('.delay-025', {delay: 250});
 ScrollReveal().reveal('.delay-05', {delay: 500});
 ScrollReveal().reveal('.delay-1', {delay: 1000});
@@ -76,5 +103,6 @@ ScrollReveal().reveal('.sequenced-4', { interval: 100, origin: 'left', distance:
 ScrollReveal().reveal('.sequenced-5', { interval: 600, origin: 'right', distance: '100%'});
 
 // Rotations
-ScrollReveal().reveal('.rotate', rotate);
+ScrollReveal().reveal('.rotate-1', rotate1);
+ScrollReveal().reveal('.rotate-2', rotate2);
 
