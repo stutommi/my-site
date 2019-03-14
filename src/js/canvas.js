@@ -1,7 +1,8 @@
-
+// Store HTML elements as variables
 var canvas = document.querySelector('canvas');
 var container = document.getElementById('container')
 
+// Set canvas to fit the screen
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
@@ -13,19 +14,26 @@ var mouse = {
     x: undefined,
     y: undefined
 }
+container.addEventListener('mousemove', function (event) {
+    mouse.x = event.pageX;
+    mouse.y = event.pageY;
+})
+
+// Set max expand radius for circles
 var maxRadius = 40;
 var minRadius = 2;
 
-var color = `rgba(${Math.random() * 255},${Math.random() * 255},${Math.random() * 255}, ${Math.random()})`;
 
-var helper = function() {
+// Control number of circles depending on canvas width
+var reponsiveHelper = function() {
     if (canvas.width < 700) {return 30}
     else {return 60}
 };
 
 
 
-
+// Randomize and set different colors for circles
+var color = `rgba(${Math.random() * 255},${Math.random() * 255},${Math.random() * 255}, ${Math.random()})`;
 var colorArray = [
     `rgba(${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 10) / 10}`,
     `rgba(${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 10) / 10}`,
@@ -34,11 +42,8 @@ var colorArray = [
     `rgba(${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 10) / 10}`
 
 ];
-container.addEventListener('mousemove', function (event) {
-    mouse.x = event.pageX;
-    mouse.y = event.pageY;
-})
 
+// Call init() on screen resizing
 window.addEventListener('resize', function () {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
@@ -70,6 +75,7 @@ function Circle(x, y, dx, dy, radius) {
             this.dy = -this.dy;
         }
 
+        // Moving behavior
         this.x += this.dx;
         this.y += this.dy;
 
@@ -91,10 +97,10 @@ var circleArray = [];
 
 function init() {
     circleArray = [];
-    var numOfCircles = helper();
+    var numOfCircles = reponsiveHelper();
     // Creates the circles and pushes them into circleArray
     for (let i = 0; i < numOfCircles; i++) {
-        var radius = Math.floor(Math.random() * 3) + 1;
+        var radius = 2;
         var x = Math.random() * (innerWidth - radius * 2) + radius;
         var y = Math.random() * (innerHeight - radius * 2) + radius;
         var dx = (Math.random() - 0.5);

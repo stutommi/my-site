@@ -3,13 +3,14 @@
 
 <head>
     <title>Tommi Tampio</title>
+    <meta name="Description" content="Offering services music and web development">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="favicon.ico" />
     <meta charset="UTF-8">
     <!-- CSS -->
     <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/styles.css">
     <!-- Font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800">
@@ -22,12 +23,12 @@
 </head>
 
 <body>
-
+    
     <!-- Hero -->
     <div class='container-fluid p-0 full-page height-fix' id='container'>
-
-        <canvas class="delay-7 hidden"></canvas>
-        <audio id="bgMusic" src="./media/lattari_mix3.mp3">
+        
+        <canvas></canvas>
+        <audio id="bgMusic" type="audio/mp4" preload="none" src="./media/lattari_mix3.mp3">
             Your browser does not support the
             <code>audio</code> element.
         </audio>
@@ -304,7 +305,7 @@
                         then around Finland. Music is composed by Tommi Tampio.</p>
                 </div>
             </div>
-            <div class="row parallax parallax-section-2 align-items-center half-page" id="music">
+            <div class="row parallax parallax-section-2 align-items-center half-page">
             </div>
 
             <div class="row justify-content-center min-half-page align-content-center">
@@ -568,7 +569,7 @@
 
         <!-- Projects -->
 
-        <section class="section-projects min-full-page">
+        <section class="section-projects min-half-page">
             <div class="row justify-content-center" id="projects">
                 <div class="col-auto">
                     <h1 class="font-weight-bold a-pad text-center text-dark slide-left">Projects</h1>
@@ -712,7 +713,7 @@
                 </div>
             </div>
             <form action="https://formspree.io/tommi.teetee@hotmail.com" method="POST" id="contact-form">
-                <div class="col-sm-10 col-md-5 mx-auto bg-gradient-info rounded py-2">
+                <div class="col-sm-10 col-md-5 mx-auto bg-teal rounded py-2">
                     <fieldset class="form-group text-light">
                         <div class="row">
                             <legend class="col-form-label text-left mx-auto col-sm-12">Looking for</legend>
@@ -799,10 +800,10 @@
     </div>
 
     <!-- Scripts -->
+    <script src='./js/canvas.js'></script>
     <script src="/js/jquery.min.js"></script>
     <script src="/js/popper.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
-    <script src='./js/canvas.js'></script>
     <script src='./js/index.js'></script>
     <script src='./js/scrollreveal.js'></script>
 
