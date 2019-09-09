@@ -1,3 +1,6 @@
+body {
+  font-family: 'Raleway'; }
+
 .bg-teal {
   background-color: #04c1c8; }
 
@@ -23,8 +26,14 @@ html, body {
   -moz-font-feature-settings: "lnum";
   font-feature-settings: "lnum"; }
 
+.fact-border {
+  position: absolute;
+  right: 50%;
+  height: inherit; }
+
 body {
-  position: relative; }
+  position: relative;
+  -webkit-font-smoothing: antialiased; }
 
 .card-bg {
   background-color: #04c1c8; }
@@ -50,6 +59,9 @@ img {
 .w-55 {
   width: 55%; }
 
+.w-60 {
+  width: 60%; }
+
 .w-65 {
   width: 65%; }
 
@@ -58,6 +70,9 @@ img {
 
 .w-80 {
   width: 80%; }
+
+.w-85 {
+  width: 85%; }
 
 .w-90 {
   width: 90%; }
@@ -82,57 +97,57 @@ a:hover {
 
 .hexagon-green {
   margin: 30px 0 15px 0;
-  width: 75px;
-  height: 41.25px;
+  width: calc(100px * 0.76);
+  height: calc(55px * 0.76);
   background: #45c804;
   position: relative; }
   .hexagon-green:before {
     content: "";
     position: absolute;
-    top: -18.75px;
+    top: calc(-25px * 0.76);
     left: 0;
     width: 0;
     height: 0;
-    border-left: 37.5px solid transparent;
-    border-right: 37.5px solid transparent;
-    border-bottom: 18.75px solid #45c804; }
+    border-left: calc(50px * 0.76) solid transparent;
+    border-right: calc(50px * 0.76) solid transparent;
+    border-bottom: calc(25px * 0.76) solid #45c804; }
   .hexagon-green:after {
     content: "";
     position: absolute;
-    bottom: -18.75px;
+    bottom: calc(-25px * 0.76);
     left: 0;
     width: 0;
     height: 0;
-    border-left: 37.5px solid transparent;
-    border-right: 37.5px solid transparent;
-    border-top: 18.75px solid #45c804; }
+    border-left: calc(50px * 0.76) solid transparent;
+    border-right: calc(50px * 0.76) solid transparent;
+    border-top: calc(25px * 0.76) solid #45c804; }
 
 .hexagon-teal {
   margin: 30px 0 15px 0;
-  width: 75px;
-  height: 41.25px;
+  width: calc(100px * 0.76);
+  height: calc(55px * 0.76);
   background: #04c1c8;
   position: relative; }
   .hexagon-teal:before {
     content: "";
     position: absolute;
-    top: -18.75px;
+    top: calc(-25px * 0.76);
     left: 0;
     width: 0;
     height: 0;
-    border-left: 37.5px solid transparent;
-    border-right: 37.5px solid transparent;
-    border-bottom: 18.75px solid #04c1c8; }
+    border-left: calc(50px * 0.76) solid transparent;
+    border-right: calc(50px * 0.76) solid transparent;
+    border-bottom: calc(25px * 0.76) solid #04c1c8; }
   .hexagon-teal:after {
     content: "";
     position: absolute;
-    bottom: -18.75px;
+    bottom: calc(-25px * 0.76);
     left: 0;
     width: 0;
     height: 0;
-    border-left: 37.5px solid transparent;
-    border-right: 37.5px solid transparent;
-    border-top: 18.75px solid #04c1c8; }
+    border-left: calc(50px * 0.76) solid transparent;
+    border-right: calc(50px * 0.76) solid transparent;
+    border-top: calc(25px * 0.76) solid #04c1c8; }
 
 html.sr .load-hidden {
   visibility: hidden; }
@@ -166,11 +181,22 @@ html.sr .load-hidden {
 canvas {
   top: 0;
   left: 0;
+  opacity: 0;
   width: 100%;
   height: 100vh;
-  position: absolute; }
+  position: absolute;
+  animation: fade 0.5s 7s linear forwards; }
+
+@keyframes fade {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 
 .section-projects {
+  overflow-x: hidden; }
+
+.facts {
   overflow-x: hidden; }
 
 .active {

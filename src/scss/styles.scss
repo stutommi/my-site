@@ -4,6 +4,10 @@
 $teal: hsl(182, 96%, 40%);
 $green: hsl(100, 96%, 40%);
 
+body {
+  font-family: 'Raleway'
+}
+
 .bg-teal {
   background-color: $teal;
 }
@@ -35,8 +39,15 @@ html, body {
     font-feature-settings: "lnum";
 }
 
+.fact-border {
+  position: absolute;
+  right: 50%;
+  height: inherit;
+}
+
 body {
   position: relative;
+  -webkit-font-smoothing: antialiased; 
 }
 
 .card-bg {
@@ -65,6 +76,9 @@ img {
 .w-55 {
   width: 55%
 }
+.w-60 {
+  width: 60%
+}
 .w-65 {
   width: 65%
 }
@@ -73,6 +87,9 @@ img {
 }
 .w-80 {
   width: 80%
+}
+.w-85 {
+  width: 85%
 }
 .w-90 {
   width: 90%
@@ -102,74 +119,75 @@ a:hover {
 }
 
 // HEXAGONS
+
 .hexagon-green {
-  margin: 30px 0 15px 0;
-  width: 75px;
-  height: 41.25px;
+  margin: 30px 0 15px 0; 
+  width: calc(100px * 0.76);
+  height: calc(55px * 0.76);
   background: $green;
   position: relative;
 
   &:before {
   content: "";
   position: absolute;
-  top: -18.75px;
+  top: calc(-25px * 0.76);
   left: 0;
   width: 0;
   height: 0;
   border: {
-    left: 37.5px solid transparent;
-    right: 37.5px solid transparent;
-    bottom: 18.75px solid $green;
+    left: calc(50px * 0.76) solid transparent;
+    right: calc(50px * 0.76) solid transparent;
+    bottom: calc(25px * 0.76) solid $green;
   }
   }
 
   &:after {
   content: "";
   position: absolute;
-  bottom: -18.75px;
+  bottom: calc(-25px * 0.76);
   left: 0;
   width: 0;
   height: 0;
   border: {
-    left: 37.5px solid transparent;
-    right: 37.5px solid transparent;
-    top: 18.75px solid $green;
+    left: calc(50px * 0.76) solid transparent;
+    right: calc(50px * 0.76) solid transparent;
+    top: calc(25px * 0.76) solid $green;
   }
 }
 }
 
 .hexagon-teal {
-  margin: 30px 0 15px 0;
-  width: 75px;
-  height: 41.25px;
+  margin: 30px 0 15px 0; 
+  width: calc(100px * 0.76);
+  height: calc(55px * 0.76);
   background: $teal;
   position: relative;
 
   &:before {
   content: "";
   position: absolute;
-  top: -18.75px;
+  top: calc(-25px * 0.76);
   left: 0;
   width: 0;
   height: 0;
   border: {
-    left: 37.5px solid transparent;
-    right: 37.5px solid transparent;
-    bottom: 18.75px solid $teal;
+    left: calc(50px * 0.76) solid transparent;
+    right: calc(50px * 0.76) solid transparent;
+    bottom: calc(25px * 0.76) solid $teal;
   }
   }
 
   &:after {
   content: "";
   position: absolute;
-  bottom: -18.75px;
+  bottom: calc(-25px * 0.76);
   left: 0;
   width: 0;
   height: 0;
   border: {
-    left: 37.5px solid transparent;
-    right: 37.5px solid transparent;
-    top: 18.75px solid $teal;
+    left: calc(50px * 0.76) solid transparent;
+    right: calc(50px * 0.76) solid transparent;
+    top: calc(25px * 0.76) solid $teal;
   }
 }
 }
@@ -217,13 +235,23 @@ html.sr .load-hidden {
 canvas {
   top: 0;
   left: 0;
-
+  opacity: 0;
   width: 100%;
   height: 100vh;
   position: absolute;
+  animation: fade 0.5s 7s linear forwards
+}
+
+@keyframes fade {
+  from {opacity: 0}
+  to {opacity: 1}
 }
 
 .section-projects {
+  overflow-x: hidden
+}
+
+.facts {
   overflow-x: hidden
 }
 
