@@ -1,3 +1,6 @@
+body {
+  font-family: 'Raleway'; }
+
 .bg-teal {
   background-color: #04c1c8; }
 
@@ -21,9 +24,7 @@ html, body {
   min-height: 100vh;
   -webkit-font-feature-settings: "lnum";
   -moz-font-feature-settings: "lnum";
-  font-feature-settings: "lnum"; 
-  font-family:  "raleway", "helvetica";
-}
+  font-feature-settings: "lnum"; }
 
 .fact-border {
   position: absolute;
@@ -58,6 +59,9 @@ img {
 .w-55 {
   width: 55%; }
 
+.w-60 {
+  width: 60%; }
+
 .w-65 {
   width: 65%; }
 
@@ -66,6 +70,9 @@ img {
 
 .w-80 {
   width: 80%; }
+
+.w-85 {
+  width: 85%; }
 
 .w-90 {
   width: 90%; }

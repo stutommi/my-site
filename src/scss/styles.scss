@@ -4,6 +4,10 @@
 $teal: hsl(182, 96%, 40%);
 $green: hsl(100, 96%, 40%);
 
+body {
+  font-family: 'Raleway'
+}
+
 .bg-teal {
   background-color: $teal;
 }
@@ -72,6 +76,9 @@ img {
 .w-55 {
   width: 55%
 }
+.w-60 {
+  width: 60%
+}
 .w-65 {
   width: 65%
 }
@@ -80,6 +87,9 @@ img {
 }
 .w-80 {
   width: 80%
+}
+.w-85 {
+  width: 85%
 }
 .w-90 {
   width: 90%
